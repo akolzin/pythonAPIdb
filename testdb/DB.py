@@ -54,11 +54,11 @@ class DB:
         self.connect.commit()
         return True
 
-db = DB()
-
-#users = db.getAllUsers()
-#users = db.getTestResults()
-users = db.insertTestResulr('3', True)
-
-
-print(users)
+# testdb = DB()
+#
+# #users = testdb.getAllUsers()
+# #users = testdb.getTestResults()
+# users = testdb.insertTestResulr('3', True)
+#
+#
+# print(users)

@@ -2,5 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/rep.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/rep1.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/rep2.json" charset="windows-1251" />
   </component>
 </project>
