@@ -1,6 +1,6 @@
 import pytest
 #from api.client import RestfulBookerClient
-from testdb.DB import DB
+from application.testdb.DB import DB
 
 
 db = DB()
@@ -17,7 +17,7 @@ def pytest_runtest_makereport(item, call):
     report = outcome.get_result()
 
     if report.when == 'call':
-        db.insertTestResulr(report.nodeid, report.outcome == 'passed')
+        # db.insertTestResulr(report.nodeid, report.outcome == 'passed')
         print('eep!!', report.outcome)
 
 

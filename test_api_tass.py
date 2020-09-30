@@ -11,7 +11,7 @@ url = "http://5.227.126.79:9200/mediadev-elvis-metadata-avm/_search?size=19"
 # url1 = "http://5.227.126.79:9200/mediadev-elvis-metadata-avm/_search?data=%7B%22query%22%3A%7B%22match%22%3A%7B%22cf_containerType%22%3A%7B%22query%22%3A%22лента%22%7D%7D%7D%7D"
 url1 = "http://elvis2.dev.itass.local/api/asset/search?q=BTF4Qnx54k0By0n_e_orYJ"
 url2 = "http://elvis2.dev.itass.local/api/asset/search?q=/Data/Sections&size=25"
-url22 = "http://elvis2.dev.itass.local/api/asset/search?q=/Reportages&size=473"
+url22 = "http://elvis2.dev.itass.local/api/asset/search?q=/Reportages&size=5475"
 url3 = "http://elvis2.dev.itass.local/services/apilogin?username=cvtTest2&password=cvtTest2"
 # ?assetIds=BTF4Qnx54k0By0n_e_orYJ
 
@@ -42,7 +42,6 @@ class TestAPITASS:
             print(json.dumps(path1, indent=4, ensure_ascii=False))
 
     # составляет блок с репортажами
-
     def test_n2_create_bloc_reportazhi(self):
         response = requests.post(url3)
         json_data = json.loads(response.text)
@@ -97,7 +96,7 @@ class TestAPITASS:
                     #     print(i)
         f.close()
 
-    # выводит в консоли репортажи
+    # выводит в консоли репортаж
     def test_n3_console_reportezhi(self):
         response = requests.post(url3)
         json_data = json.loads(response.text)
@@ -115,6 +114,10 @@ class TestAPITASS:
 
         # print(json_data)
         print(json.dumps(json_data, indent=4, ensure_ascii=False))
+        rep = json.dumps(json_data, indent=4, ensure_ascii=False)
+        f = open('rep.json', 'w')  # открытие в режиме записи
+        f.write(rep)
+        f.close()
         path1 = json_data['hits'][0]['metadata']
         if 'cf_containerType' in path1:
             repor = json_data['hits'][0]['metadata']['cf_containerType']
@@ -190,23 +193,24 @@ class TestAPITASS:
         # print(json.dumps(json_data, indent=4, ensure_ascii=False))
 
         rep = json.dumps(json_data, indent=4, ensure_ascii=False)
-        f = open('rep.json', 'w')  # открытие в режиме записи
+        # f = open('rep.json', 'w')  # открытие в режиме записи
         # f.write(str(rep))
-        f.close()
+        # f.close()
         cn = 0
         f1 = open('rep2.json', 'w')
         f1.write('{' + '\n')
         f1.write('  "Репортажи": [' + '\n')
-        for i in range(0, 473):
+        for i in range(0, 5+-475):
             path1 = json_data['hits'][i]['metadata']
+            path0 = json_data['hits'][i]
             if 'cf_containerType' in path1:
                 repor = json_data['hits'][i]['metadata']['cf_containerType']
-                if repor == 'репортаж' and 'cf_wireSections' in path1:
+                if repor == 'репортаж' and 'cf_wireSections' in path1 and 'id' in path0:
                     f1.write('   {' + '\n')
                     if 'cf_headlineRu' in path1:
                         path2 = json_data['hits'][i]['metadata']['cf_headlineRu']  # ['cf_headlineRu'] name
                         path2 = str(path2).replace('"', "'")
-                        print(path2)
+                        # print(path2)
                         f1.write('      "Название": ' + '"' + str(path2) + '",' + '\n')
                         # print(json.dumps(path2, indent=4, ensure_ascii=False))
                     # else:
@@ -219,6 +223,14 @@ class TestAPITASS:
                         # print(json.dumps(path2, indent=4, ensure_ascii=False))
                     # else:
                     #     print(i)
+                    if 'cf_plannedPubDate' in path1:
+                        path2 = json_data['hits'][i]['metadata']['cf_plannedPubDate']['formatted'] # ['cf_headlineRu'] name
+                        path2 = str(path2)
+                        path2 = path2[1: -1]
+                        f1.write('      "Дата будликации": ' + '"' + str(path2) + '",' + '\n')
+                        # print(json.dumps(path2, indent=4, ensure_ascii=False))
+                    # else:
+                    #     print(i)
                     if 'status' in path1:
                         path2 = json_data['hits'][i]['metadata']['status']  # ['cf_headlineRu'] name
                         id_report = json_data['hits'][i]['id']
@@ -228,14 +240,14 @@ class TestAPITASS:
                         # f1.write('---------------------------' + '\n')
                         # print(json.dumps(path2, indent=4, ensure_ascii=False), ' - ', i, ' id - ', json.dumps(id_report, indent=4, ensure_ascii=False))
                         # print(' id - ', json.dumps(id_report, indent=4, ensure_ascii=False))
-                        print()
+                        # print()
                     cn = cn + 1
                     f1.write('   },' + '\n')
                     # else:
                     #     print(i)
         f1.write(' {}  ]' + '\n')
         f1.write('}' + '\n')
-        f.close()
+        # f.close()
         print(cn)
 
     # парсит json док с репортажами из test_n5
@@ -264,3 +276,32 @@ class TestAPITASS:
         # json_data = json.loads(nums)
         # print(json_data)
         # print("4")
+
+    # выводит в консоли репортаж
+    def test_n7_console_reportezhi_srawnyt(self):
+        self.test_n3_console_reportezhi()
+        response = requests.post(url3)
+        json_data = json.loads(response.text)
+        print(json_data)
+        Token = json_data["authToken"]
+        print(Token)
+        print('--------------------------')
+
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + Token}
+
+        response = requests.request("GET", url1, headers=headers)
+        json_data = json.loads(response.text)
+
+        # print(json_data)
+        print(json.dumps(json_data, indent=4, ensure_ascii=False))
+        response1 = json.dumps(json_data, indent=4, ensure_ascii=False)
+        with open('rep.json', 'r') as fh:  # открываем файл на чтение
+            data = json.load(fh)  # загружаем из файла данные в словарь data
+        print(data)
+        assert json_data == data
+
+        data1 = json.dumps(data, indent=4, ensure_ascii=False)
+        assert response1 == data1
+
