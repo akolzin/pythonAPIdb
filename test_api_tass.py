@@ -26,11 +26,28 @@ class TestAPITASS:
         headers = {
             'Content-Type': 'application/json'
         }
-        response = requests.request("GET", url, headers=headers, data=payload.encode('utf8'))
+
+        data = {
+                  "query": {
+                    "bool": {
+                      "must": [
+                        { "match": { "cf_containerType": {"query": "лента"} } } #,
+                        #{ "match": { "folderPath": "/Data/Sections" } }
+                      ]
+                    }
+                  }
+                }  # Если по одному ключу находится несколько словарей, формируем список словарей
+        # answer = requests.request("POST", url, data=json.dumps(data), headers=headers)
+        # print(answer)
+        # response_x = answer.json()
+        # print(json.dumps(response_x, indent=4, ensure_ascii=False))
+
+        # response = requests.request("GET", url, headers=headers, data=payload.encode('utf8'))
+        response = requests.request("GET", url, headers=headers, data=json.dumps(data))
         json_data = json.loads(response.text)
         print(json_data)
         p = json.dumps(json_data, indent=4, ensure_ascii=False)
-        # print(p)
+        print(p)
         path = json_data["hits"]
         print(path)
         path2 = json_data["hits"]["hits"]  # ["_source"]["assetType"]
@@ -40,6 +57,46 @@ class TestAPITASS:
         for i in range(1, 18):
             path1 = path2[i]['_source']['cf_headlineRu']
             print(json.dumps(path1, indent=4, ensure_ascii=False))
+
+    def test_n1_1_spisok_lent(self):
+        payload = "{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"cf_containerType\": {\r\n        \"query\": " \
+                  "\"лента\"\r\n      }\r\n    }\r\n  }\r\n} "
+        headers = {
+            'Content-Type': 'application/json'
+        }
+
+        data = {
+                  "query": {
+                    "bool": {
+                      "must": [
+                        #{ "match": { "cf_containerType": {"query": "репортаж"} } } #,
+                        { "match": { "cf_wireSections": "MILITARY" } }
+                      ]
+                    }
+                  }
+                }  # Если по одному ключу находится несколько словарей, формируем список словарей
+        # answer = requests.request("POST", url, data=json.dumps(data), headers=headers)
+        # print(answer)
+        # response_x = answer.json()
+        # print(json.dumps(response_x, indent=4, ensure_ascii=False))
+
+        # response = requests.request("GET", url, headers=headers, data=payload.encode('utf8'))
+        urll1 = 'http://5.227.126.79:9200/mediadev-elvis-metadata-avm/_search?size=199'
+        response = requests.request("GET", url, headers=headers, data=json.dumps(data))
+        json_data = json.loads(response.text)
+        print(json_data)
+        p = json.dumps(json_data, indent=4, ensure_ascii=False)
+        print(p)
+        path = json_data["hits"]
+        print(path)
+        path2 = json_data["hits"]["hits"]  # ["_source"]["assetType"]
+        print(path2)
+        path1 = path2[1]['_source']['cf_headlineRu']
+        print(json.dumps(path1, indent=4, ensure_ascii=False))
+        for i in range(0, 17):
+            path1 = path2[i]['_source']['cf_headlineRu']
+            print(json.dumps(path1, indent=4, ensure_ascii=False))
+
 
     # составляет блок с репортажами
     def test_n2_create_bloc_reportazhi(self):
@@ -304,4 +361,27 @@ class TestAPITASS:
 
         data1 = json.dumps(data, indent=4, ensure_ascii=False)
         assert response1 == data1
+
+    # def test_n8_create_reportezh(self):
+    #     response = requests.post(url3)
+    #     json_data = json.loads(response.text)
+    #     print(json_data)
+    #     Token = json_data["authToken"]
+    #     print(Token)
+    #     print('--------------------------')
+    #
+    #     data = {"folderPath": "/Reportages", "assetType": "collection", "name": "TASS Collection", "cf_containerType": {
+    #             "value": "репортаж"}}
+    #
+    #     headers = {
+    #         'Content-Type': 'application/json',
+    #         'Authorization': 'Bearer ' + Token}
+    #     urll = 'http://elvis2.dev.itass.local/services/create?folderPath=/Reportages&assetType=collection&name=TASS%20Collection'
+    #     response = requests.request("POST", urll, headers=headers)
+    #     json_data = json.loads(response.text)
+    #
+    #     print(json_data)
+    #     print(json.dumps(json_data, indent=4, ensure_ascii=False))
+
+
 
