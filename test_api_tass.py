@@ -20,6 +20,15 @@ Token = ""
 
 # вызывает список лент по способу бекендеров тасс медиа
 class TestAPITASS:
+    def test_token(self):
+        response = requests.post(url3)
+        json_data = json.loads(response.text)
+        print(json_data)
+        Token = json_data["authToken"]
+        print(Token)
+        print('--------------------------')
+        return Token
+
     def test_n1_spisok_lent(self):
         payload = "{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"cf_containerType\": {\r\n        \"query\": " \
                   "\"лента\"\r\n      }\r\n    }\r\n  }\r\n} "
@@ -58,6 +67,7 @@ class TestAPITASS:
             path1 = path2[i]['_source']['cf_headlineRu']
             print(json.dumps(path1, indent=4, ensure_ascii=False))
 
+    # запросить репортажи по конкретмым полям
     def test_n1_1_spisok_lent(self):
         payload = "{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"cf_containerType\": {\r\n        \"query\": " \
                   "\"лента\"\r\n      }\r\n    }\r\n  }\r\n} "
@@ -69,7 +79,7 @@ class TestAPITASS:
                   "query": {
                     "bool": {
                       "must": [
-                        #{ "match": { "cf_containerType": {"query": "репортаж"} } } #,
+                        { "match": { "cf_containerType": {"query": "репортаж"} } },
                         { "match": { "cf_wireSections": "MILITARY" } }
                       ]
                     }
@@ -96,7 +106,6 @@ class TestAPITASS:
         for i in range(0, 17):
             path1 = path2[i]['_source']['cf_headlineRu']
             print(json.dumps(path1, indent=4, ensure_ascii=False))
-
 
     # составляет блок с репортажами
     def test_n2_create_bloc_reportazhi(self):
@@ -155,12 +164,13 @@ class TestAPITASS:
 
     # выводит в консоли репортаж
     def test_n3_console_reportezhi(self):
-        response = requests.post(url3)
-        json_data = json.loads(response.text)
-        print(json_data)
-        Token = json_data["authToken"]
-        print(Token)
-        print('--------------------------')
+        Token = self.test_token()
+        # response = requests.post(url3)
+        # json_data = json.loads(response.text)
+        # print(json_data)
+        # Token = json_data["authToken"]
+        # print(Token)
+        # print('--------------------------')
 
         headers = {
             'Content-Type': 'application/json',
@@ -196,11 +206,12 @@ class TestAPITASS:
 
     # выводит список лент по API документации DAM
     def test_n4_spisok_lent(self):
-        response = requests.post(url3)
-        json_data = json.loads(response.text)
-        print(json_data)
-        Token = json_data["authToken"]
-        print(Token)
+        Token = self.test_token()
+        # response = requests.post(url3)
+        # json_data = json.loads(response.text)
+        # print(json_data)
+        # Token = json_data["authToken"]
+        # print(Token)
 
         headers = {
             'Content-Type': 'application/json',
@@ -232,12 +243,13 @@ class TestAPITASS:
 
     # создает json док с репортажами
     def test_n5_create_json_reportazhi(self):
-        response = requests.post(url3)
-        json_data = json.loads(response.text)
-        print(json_data)
-        Token = json_data["authToken"]
-        print(Token)
-        print('--------------------------')
+        Token = self.test_token()
+        # response = requests.post(url3)
+        # json_data = json.loads(response.text)
+        # print(json_data)
+        # Token = json_data["authToken"]
+        # print(Token)
+        # print('--------------------------')
 
         headers = {
             'Content-Type': 'application/json',
@@ -334,15 +346,16 @@ class TestAPITASS:
         # print(json_data)
         # print("4")
 
-    # выводит в консоли репортаж
+    # выводит сравнивает пришедший json с тем который хранится в файле как правильный
     def test_n7_console_reportezhi_srawnyt(self):
         self.test_n3_console_reportezhi()
-        response = requests.post(url3)
-        json_data = json.loads(response.text)
-        print(json_data)
-        Token = json_data["authToken"]
-        print(Token)
-        print('--------------------------')
+        Token = self.test_token()
+        # response = requests.post(url3)
+        # json_data = json.loads(response.text)
+        # print(json_data)
+        # Token = json_data["authToken"]
+        # print(Token)
+        # print('--------------------------')
 
         headers = {
             'Content-Type': 'application/json',
@@ -362,6 +375,7 @@ class TestAPITASS:
         data1 = json.dumps(data, indent=4, ensure_ascii=False)
         assert response1 == data1
 
+    # создание сущности в DAM через API
     # def test_n8_create_reportezh(self):
     #     response = requests.post(url3)
     #     json_data = json.loads(response.text)
@@ -369,9 +383,6 @@ class TestAPITASS:
     #     Token = json_data["authToken"]
     #     print(Token)
     #     print('--------------------------')
-    #
-    #     data = {"folderPath": "/Reportages", "assetType": "collection", "name": "TASS Collection", "cf_containerType": {
-    #             "value": "репортаж"}}
     #
     #     headers = {
     #         'Content-Type': 'application/json',
