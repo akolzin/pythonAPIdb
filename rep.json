@@ -10,13 +10,25 @@
             "metadata": {
                 "assetType": "collection",
                 "cf_collectionSortOrder": "[{\"sortOrder\":\"3\",\"assetId\":\"EyTQnjg4Kzr8dJQYPlTkrj\"},{\"sortOrder\":\"5\",\"assetId\":\"8kogYpjQ4iB8nbeP1asJwG\"},{\"sortOrder\":\"6\",\"assetId\":\"0gRy2Z8K41GA0Lg3mEjBtN\"},{\"sortOrder\":\"-1\",\"assetId\":\"0d2NFYpPaYYBx3kLGw_K57\"},{\"sortOrder\":\"2\",\"assetId\":\"9izKwgdfqF_9ThlORtGcDK\"}]",
+                "copyrightStatus": "eded",
                 "assetFileModifier": "cvtTest2",
+                "copyrightOwnerID": "yhyh",
                 "assetCreator": "cvtTest2",
+                "cf_descriptionRu": "rfrfrfrfrf4444",
                 "assetFileModified": {
                     "value": 1598873751315,
                     "formatted": "2020-08-31 14:35:51 +0300"
                 },
                 "cf_wireImages": "[{\"section\":\"MILITARY\",\"ref_containerKeyAssetId\":\"\"},{\"section\":\"POL\",\"ref_containerKeyAssetId\":\"\"},{\"section\":\"UKR\",\"ref_containerKeyAssetId\":\"\"}]",
+                "cf_descriptionDef": "rfrfrfrfrf4444",
+                "cf_stockIdList": [
+                    "0195dYzUKvgBqbafxP72wN",
+                    "03Gove32qjB9l2J2Ws54tF",
+                    "04XEOt3UK9ZBIlopJf3nq4",
+                    "0DcnG520KZN9sN8JPWqatX",
+                    "0bT7shz4KdM8gnB1zruEbz"
+                ],
+                "cf_headlineFirst": "rfrfrf",
                 "downloadCount": 0,
                 "status": "выпущено на сайт",
                 "cf_reportageDateEnd": {
@@ -25,15 +37,18 @@
                 },
                 "assetPath": "/Reportages/4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
                 "cf_hiddenDescription": "ТАСС.Медиа репортаж 2",
+                "cf_objectId": 34199,
                 "baseName": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
                 "cf_collectionSortOrderRef": "11 12",
                 "iptcCreated": {
                     "value": 1598873751312,
                     "formatted": "2020-08-31 14:35:51 +0300"
                 },
+                "copyrightOwnerImageID": "ujuju",
                 "contentETag": 1,
                 "viewCount": 0,
                 "cf_itemCount": 6,
+                "copyrightRegistrationNumber": "ikikik",
                 "filename": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
                 "assetCreated": {
                     "value": 1598873751315,
@@ -44,8 +59,12 @@
                     "POL",
                     "UKR"
                 ],
+                "copyrightAgent": "rfrf",
+                "cf_descriptionFirst": "ghghg",
                 "cf_captionInterpreter": "ЦВТ_Ч",
                 "name": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
+                "copyrightOwner": "tgtgt",
+                "cf_descriptionEn": "ttata",
                 "folderPath": "/Reportages",
                 "cf_containerType": "репортаж",
                 "assetDomain": "container",
@@ -59,8 +78,8 @@
                     "formatted": "2020-09-01 18:00:00 +0300"
                 },
                 "assetModified": {
-                    "value": 1601042044400,
-                    "formatted": "2020-09-25 16:54:04 +0300"
+                    "value": 1603289997207,
+                    "formatted": "2020-10-21 17:19:57 +0300"
                 },
                 "thumbnailState": "no",
                 "assetModifier": "cvtTest2",

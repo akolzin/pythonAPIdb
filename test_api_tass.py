@@ -75,12 +75,22 @@ class TestAPITASS:
             'Content-Type': 'application/json'
         }
 
+        # data = {
+        #             "query": {
+        #                 "match": {
+        #                     "id": {
+        #                         "query": "BTF4Qnx54k0By0n_e_orYJ"
+        #                     }
+        #                 }
+        #             }
+        #         }
+
         data = {
                   "query": {
                     "bool": {
                       "must": [
-                        { "match": { "cf_containerType": {"query": "репортаж"} } },
-                        { "match": { "cf_wireSections": "MILITARY" } }
+                        { "match": { "cf_containerType": {"query": "репортаж"} } }#,
+                        #{ "match": { "cf_wireSections": "MILITARY" } }
                       ]
                     }
                   }
@@ -103,8 +113,19 @@ class TestAPITASS:
         print(path2)
         path1 = path2[1]['_source']['cf_headlineRu']
         print(json.dumps(path1, indent=4, ensure_ascii=False))
+        print('------------------------------------')
         for i in range(0, 17):
+            path1 = path2[i]['_source']['cf_objectId']
+            print(json.dumps(path1, indent=4, ensure_ascii=False))
+            path1 = path2[i]['_source']['iptcCreated']
+            print(json.dumps(path1, indent=4, ensure_ascii=False))
+            path1 = path2[i]['_source']['copyright']
+            print(json.dumps(path1, indent=4, ensure_ascii=False))
             path1 = path2[i]['_source']['cf_headlineRu']
+            print(json.dumps(path1, indent=4, ensure_ascii=False))
+            path1 = path2[i]['_source']['cf_descriptionRu']
+            print(json.dumps(path1, indent=4, ensure_ascii=False))
+            path1 = path2[i]['_source']['cf_stockIdList']
             print(json.dumps(path1, indent=4, ensure_ascii=False))
 
     # составляет блок с репортажами
@@ -165,22 +186,17 @@ class TestAPITASS:
     # выводит в консоли репортаж
     def test_n3_console_reportezhi(self):
         Token = self.test_token()
-        # response = requests.post(url3)
-        # json_data = json.loads(response.text)
-        # print(json_data)
-        # Token = json_data["authToken"]
-        # print(Token)
-        # print('--------------------------')
+        url_rep = "http://elvis2.dev.itass.local/api/asset/search?q=BTF4Qnx54k0By0n_e_orYJ"
 
         headers = {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + Token}
 
-        response = requests.request("GET", url1, headers=headers)
+        response = requests.request("GET", url_rep, headers=headers)
         json_data = json.loads(response.text)
 
         # print(json_data)
-        print(json.dumps(json_data, indent=4, ensure_ascii=False))
+        # print(json.dumps(json_data, indent=4, ensure_ascii=False))
         rep = json.dumps(json_data, indent=4, ensure_ascii=False)
         f = open('rep.json', 'w')  # открытие в режиме записи
         f.write(rep)
@@ -203,15 +219,49 @@ class TestAPITASS:
                     print(json.dumps(path3, indent=4, ensure_ascii=False), ' id - ',
                           json.dumps(id_report, indent=4, ensure_ascii=False))
                     print()
+                    print('------------------------------------------------')
+                    print()
+
+                if 'cf_objectId' in path1:
+                    path4 = json_data['hits'][0]['metadata']['cf_objectId']
+                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+                else:
+                    path4 = ' '
+                print('ID DAM:  ', path4)
+                if 'iptcCreated' in path1:
+                    path4 = json_data['hits'][0]['metadata']['iptcCreated']['formatted']
+                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+                else:
+                    path4 = ' '
+                print('Дата создания:  ', path4)
+                if 'copyright' in path1:
+                    path4 = json_data['hits'][0]['metadata']['copyright']
+                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+                else:
+                    path4 = ' '
+                print('Авторское право:  ', path4)
+                if 'cf_headlineRu' in path1:
+                    path4 = json_data['hits'][0]['metadata']['cf_headlineRu']
+                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+                else:
+                    path4 = ' '
+                print('Заголовок:  ', path4)
+                if 'cf_descriptionRu' in path1:
+                    path4 = json_data['hits'][0]['metadata']['cf_descriptionRu']
+                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+                else:
+                    path4 = ' '
+                print('Описание:  ', path4)
+                if 'cf_stockIdList' in path1:
+                    path4 = json_data['hits'][0]['metadata']['cf_stockIdList']
+                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+                else:
+                    path4 = ' '
+                print('Библиотека:  ', path4)
 
     # выводит список лент по API документации DAM
     def test_n4_spisok_lent(self):
         Token = self.test_token()
-        # response = requests.post(url3)
-        # json_data = json.loads(response.text)
-        # print(json_data)
-        # Token = json_data["authToken"]
-        # print(Token)
 
         headers = {
             'Content-Type': 'application/json',
@@ -244,12 +294,6 @@ class TestAPITASS:
     # создает json док с репортажами
     def test_n5_create_json_reportazhi(self):
         Token = self.test_token()
-        # response = requests.post(url3)
-        # json_data = json.loads(response.text)
-        # print(json_data)
-        # Token = json_data["authToken"]
-        # print(Token)
-        # print('--------------------------')
 
         headers = {
             'Content-Type': 'application/json',
@@ -350,12 +394,6 @@ class TestAPITASS:
     def test_n7_console_reportezhi_srawnyt(self):
         self.test_n3_console_reportezhi()
         Token = self.test_token()
-        # response = requests.post(url3)
-        # json_data = json.loads(response.text)
-        # print(json_data)
-        # Token = json_data["authToken"]
-        # print(Token)
-        # print('--------------------------')
 
         headers = {
             'Content-Type': 'application/json',
@@ -377,12 +415,7 @@ class TestAPITASS:
 
     # создание сущности в DAM через API
     # def test_n8_create_reportezh(self):
-    #     response = requests.post(url3)
-    #     json_data = json.loads(response.text)
-    #     print(json_data)
-    #     Token = json_data["authToken"]
-    #     print(Token)
-    #     print('--------------------------')
+    #     Token = self.test_token()
     #
     #     headers = {
     #         'Content-Type': 'application/json',
