@@ -1,4 +1,6 @@
 import json
+import time
+
 import requests
 import pytest
 import urllib
@@ -17,6 +19,18 @@ url3 = "http://elvis2.dev.itass.local/services/apilogin?username=cvtTest2&passwo
 # ?assetIds=BTF4Qnx54k0By0n_e_orYJ
 
 Token = ""
+
+
+def benchmark(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(end - start)
+        assert end - start <= 0.5
+        return result
+
+    return wrapper()
 
 
 # вызывает список лент по способу бекендеров тасс медиа
@@ -186,9 +200,10 @@ class TestAPITASS:
 
     # выводит в консоли репортаж
     @pytest.mark.parametrize("id1",
-                             ('BTF4Qnx54k0By0n_e_orYJ', '2W2mGul-4tV8aT3iNz7xPQ')
+                             ('2W2mGul-4tV8aT3iNz7xPQ', 'BTF4Qnx54k0By0n_e_orYJ')
                              )
     def test_n3_console_reportezhi(self, id1):
+        start = time.time()
         Token = self.test_token()
         url_rep = "http://elvis2.dev.itass.local/"  # 2W2mGul-4tV8aT3iNz7xPQ   api/asset/search?q=BTF4Qnx54k0By0n_e_orYJ
         api = 'api/asset/search'
@@ -267,6 +282,8 @@ class TestAPITASS:
                 else:
                     path4 = ' '
                 print('Библиотека:  ', path4)
+        end = time.time()
+        print(end - start)
 
     # выводит список лент по API документации DAM
     def test_n4_spisok_lent(self):

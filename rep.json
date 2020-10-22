@@ -2,66 +2,99 @@
     "total": 1,
     "hits": [
         {
-            "id": "2W2mGul-4tV8aT3iNz7xPQ",
-            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/2W2mGul-4tV8aT3iNz7xPQ/thumbnail",
-            "previewUrl": "http://elvis2.dev.itass.local/api/asset/2W2mGul-4tV8aT3iNz7xPQ/preview",
-            "originalUrl": "http://elvis2.dev.itass.local/api/asset/2W2mGul-4tV8aT3iNz7xPQ/original",
+            "id": "BTF4Qnx54k0By0n_e_orYJ",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/original",
             "highlightedText": null,
             "metadata": {
                 "assetType": "collection",
+                "cf_collectionSortOrder": "[{\"sortOrder\":\"3\",\"assetId\":\"EyTQnjg4Kzr8dJQYPlTkrj\"},{\"sortOrder\":\"5\",\"assetId\":\"8kogYpjQ4iB8nbeP1asJwG\"},{\"sortOrder\":\"6\",\"assetId\":\"0gRy2Z8K41GA0Lg3mEjBtN\"},{\"sortOrder\":\"-1\",\"assetId\":\"0d2NFYpPaYYBx3kLGw_K57\"},{\"sortOrder\":\"2\",\"assetId\":\"9izKwgdfqF_9ThlORtGcDK\"}]",
+                "copyrightStatus": "eded",
                 "assetFileModifier": "cvtTest2",
-                "headline": "гепард ТАСС1",
+                "copyrightOwnerID": "yhyh",
                 "assetCreator": "cvtTest2",
+                "cf_descriptionRu": "rfrfrfrfrf4444",
                 "assetFileModified": {
-                    "value": 1603201145130,
-                    "formatted": "2020-10-20 16:39:05 +0300"
+                    "value": 1598873751315,
+                    "formatted": "2020-08-31 14:35:51 +0300"
                 },
-                "cf_releaseTime": "23:00:00+0300",
+                "cf_wireImages": "[{\"section\":\"MILITARY\",\"ref_containerKeyAssetId\":\"\"},{\"section\":\"POL\",\"ref_containerKeyAssetId\":\"\"},{\"section\":\"UKR\",\"ref_containerKeyAssetId\":\"\"}]",
+                "cf_releaseTime": "16:14:51+0300",
+                "cf_descriptionDef": "rfrfrfrfrf4444",
                 "cf_stockIdList": [
-                    "3ynLjedZKMr9FLStneYze4"
+                    "0195dYzUKvgBqbafxP72wN",
+                    "03Gove32qjB9l2J2Ws54tF",
+                    "04XEOt3UK9ZBIlopJf3nq4",
+                    "0DcnG520KZN9sN8JPWqatX",
+                    "0bT7shz4KdM8gnB1zruEbz"
                 ],
+                "cf_headlineFirst": "rfrfrf",
                 "downloadCount": 0,
                 "status": "выпущено на сайт",
-                "cf_headlineEn": "гепард ТАСС",
-                "assetPath": "/Collections/c25bee75-81d4-45a2-a596-b709c7b5817d.collection",
-                "cf_editor": "ЦВТ_Т",
-                "cf_objectId": 43507,
-                "containerKeyAssetId": "7FCA6Rj8qtbBdMqaYVGtdo",
-                "baseName": "c25bee75-81d4-45a2-a596-b709c7b5817d",
-                "iptcCreated": {
-                    "value": 1602619200000,
-                    "formatted": "2020-10-13 23:00:00 +0300"
+                "cf_reportageDateEnd": {
+                    "value": 1598983200000,
+                    "formatted": "2020-09-01 21:00:00 +0300"
                 },
+                "assetPath": "/Reportages/4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
+                "cf_hiddenDescription": "ТАСС.Медиа репортаж 2",
+                "cf_objectId": 34199,
+                "baseName": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
+                "cf_collectionSortOrderRef": "11 12",
+                "iptcCreated": {
+                    "value": 1598873751312,
+                    "formatted": "2020-08-31 14:35:51 +0300"
+                },
+                "copyrightOwnerImageID": "ujuju",
                 "contentETag": 1,
                 "viewCount": 0,
-                "cf_itemCount": 0,
-                "filename": "c25bee75-81d4-45a2-a596-b709c7b5817d.collection",
+                "cf_itemCount": 6,
+                "copyrightRegistrationNumber": "ikikik",
+                "filename": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
                 "assetCreated": {
-                    "value": 1603196237447,
-                    "formatted": "2020-10-20 15:17:17 +0300"
+                    "value": 1598873751315,
+                    "formatted": "2020-08-31 14:35:51 +0300"
                 },
-                "name": "c25bee75-81d4-45a2-a596-b709c7b5817d",
-                "cf_descriptionEn": "1",
-                "cf_releaseDate": "2020:10:21",
-                "folderPath": "/Collections",
-                "cf_containerType": "коллекция",
+                "cf_wireSections": [
+                    "MILITARY",
+                    "POL",
+                    "UKR"
+                ],
+                "copyrightAgent": "rfrf",
+                "cf_descriptionFirst": "ghghg",
+                "cf_captionInterpreter": "ЦВТ_Ч",
+                "name": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
+                "copyrightOwner": "tgtgt",
+                "cf_descriptionEn": "ttata",
+                "cf_releaseDate": "2020:10:22",
+                "folderPath": "/Reportages",
+                "cf_containerType": "репортаж",
                 "assetDomain": "container",
-                "cf_headlineRu": "гепард ТАСС",
+                "cf_headlineRu": "ТАСС.Медиа репортаж 2",
                 "extension": "collection",
+                "cf_folderList": [
+                    "/TASS/Authors/ТАСС.Медиа"
+                ],
+                "cf_plannedPubDate": {
+                    "value": 1598972400000,
+                    "formatted": "2020-09-01 18:00:00 +0300"
+                },
                 "assetModified": {
-                    "value": 1603352274042,
-                    "formatted": "2020-10-22 10:37:54 +0300"
+                    "value": 1603352001596,
+                    "formatted": "2020-10-22 10:33:21 +0300"
                 },
                 "thumbnailState": "no",
-                "assetModifier": "cvtTest2",
+                "assetModifier": "importmodule",
                 "previewState": "no",
                 "metadataComplete": "true",
-                "cf_urgencyRef": 1,
                 "cf_releaseDateTime": {
-                    "value": 1603310400000,
-                    "formatted": "2020-10-21 23:00:00 +0300"
+                    "value": 1603372491640,
+                    "formatted": "2020-10-22 16:14:51 +0300"
                 },
-                "public": "True",
+                "cf_reportageDateBegin": {
+                    "value": 1551693600000,
+                    "formatted": "2019-03-04 13:00:00 +0300"
+                },
                 "previewETag": 1,
                 "versionNumber": 1
             }
