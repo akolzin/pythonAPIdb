@@ -1,6 +1,7 @@
 import json
 import requests
 import pytest
+import urllib
 
 from api.client import RestfulBookerClient
 from api import random
@@ -37,15 +38,15 @@ class TestAPITASS:
         }
 
         data = {
-                  "query": {
-                    "bool": {
-                      "must": [
-                        { "match": { "cf_containerType": {"query": "лента"} } } #,
-                        #{ "match": { "folderPath": "/Data/Sections" } }
-                      ]
-                    }
-                  }
-                }  # Если по одному ключу находится несколько словарей, формируем список словарей
+            "query": {
+                "bool": {
+                    "must": [
+                        {"match": {"cf_containerType": {"query": "лента"}}}  # ,
+                        # { "match": { "folderPath": "/Data/Sections" } }
+                    ]
+                }
+            }
+        }  # Если по одному ключу находится несколько словарей, формируем список словарей
         # answer = requests.request("POST", url, data=json.dumps(data), headers=headers)
         # print(answer)
         # response_x = answer.json()
@@ -86,15 +87,15 @@ class TestAPITASS:
         #         }
 
         data = {
-                  "query": {
-                    "bool": {
-                      "must": [
-                        { "match": { "cf_containerType": {"query": "репортаж"} } }#,
-                        #{ "match": { "cf_wireSections": "MILITARY" } }
-                      ]
-                    }
-                  }
-                }  # Если по одному ключу находится несколько словарей, формируем список словарей
+            "query": {
+                "bool": {
+                    "must": [
+                        {"match": {"cf_containerType": {"query": "репортаж"}}}  # ,
+                        # { "match": { "cf_wireSections": "MILITARY" } }
+                    ]
+                }
+            }
+        }  # Если по одному ключу находится несколько словарей, формируем список словарей
         # answer = requests.request("POST", url, data=json.dumps(data), headers=headers)
         # print(answer)
         # response_x = answer.json()
@@ -184,9 +185,17 @@ class TestAPITASS:
         f.close()
 
     # выводит в консоли репортаж
-    def test_n3_console_reportezhi(self):
+    @pytest.mark.parametrize("id1",
+                             ('BTF4Qnx54k0By0n_e_orYJ', '2W2mGul-4tV8aT3iNz7xPQ')
+                             )
+    def test_n3_console_reportezhi(self, id1):
         Token = self.test_token()
-        url_rep = "http://elvis2.dev.itass.local/api/asset/search?q=BTF4Qnx54k0By0n_e_orYJ"
+        url_rep = "http://elvis2.dev.itass.local/"  # 2W2mGul-4tV8aT3iNz7xPQ   api/asset/search?q=BTF4Qnx54k0By0n_e_orYJ
+        api = 'api/asset/search'
+        url_rep += api
+        params = dict(q=id1)
+        url_rep += '?' + urllib.parse.urlencode(params)
+        print(url_rep)
 
         headers = {
             'Content-Type': 'application/json',
@@ -204,7 +213,7 @@ class TestAPITASS:
         path1 = json_data['hits'][0]['metadata']
         if 'cf_containerType' in path1:
             repor = json_data['hits'][0]['metadata']['cf_containerType']
-            if repor == 'репортаж':
+            if repor == 'репортаж' or repor == 'коллекция':
                 if 'cf_headlineRu' in path1:
                     path2 = json_data['hits'][0]['metadata']['cf_headlineRu']  # ['cf_headlineRu'] name
                     print(json.dumps(path2, indent=4, ensure_ascii=False))
@@ -313,7 +322,7 @@ class TestAPITASS:
         f1 = open('rep2.json', 'w')
         f1.write('{' + '\n')
         f1.write('  "Репортажи": [' + '\n')
-        for i in range(0, 5+-475):
+        for i in range(0, 5 + -475):
             path1 = json_data['hits'][i]['metadata']
             path0 = json_data['hits'][i]
             if 'cf_containerType' in path1:
@@ -337,7 +346,8 @@ class TestAPITASS:
                     # else:
                     #     print(i)
                     if 'cf_plannedPubDate' in path1:
-                        path2 = json_data['hits'][i]['metadata']['cf_plannedPubDate']['formatted'] # ['cf_headlineRu'] name
+                        path2 = json_data['hits'][i]['metadata']['cf_plannedPubDate'][
+                            'formatted']  # ['cf_headlineRu'] name
                         path2 = str(path2)
                         path2 = path2[1: -1]
                         f1.write('      "Дата будликации": ' + '"' + str(path2) + '",' + '\n')
@@ -426,6 +436,3 @@ class TestAPITASS:
     #
     #     print(json_data)
     #     print(json.dumps(json_data, indent=4, ensure_ascii=False))
-
-
-
