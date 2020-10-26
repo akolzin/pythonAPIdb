@@ -84,32 +84,27 @@ class TestAPITASS:
 
     # запросить репортажи по конкретмым полям
     def test_n1_1_spisok_lent(self):
+        start = time.time()
         payload = "{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"cf_containerType\": {\r\n        \"query\": " \
                   "\"лента\"\r\n      }\r\n    }\r\n  }\r\n} "
         headers = {
             'Content-Type': 'application/json'
         }
 
-        # data = {
-        #             "query": {
-        #                 "match": {
-        #                     "id": {
-        #                         "query": "BTF4Qnx54k0By0n_e_orYJ"
-        #                     }
-        #                 }
-        #             }
-        #         }
-
         data = {
-            "query": {
-                "bool": {
-                    "must": [
-                        {"match": {"cf_containerType": {"query": "репортаж"}}}  # ,
-                        # { "match": { "cf_wireSections": "MILITARY" } }
-                    ]
-                }
-            }
-        }  # Если по одному ключу находится несколько словарей, формируем список словарей
+          "query": { "match": { "_id": "0dqUtibZKYT9lLkwZp46s1" } }
+        }
+
+        # data = {
+        #     "query": {
+        #         "bool": {
+        #             "must": [
+        #                 {"match": {"cf_containerType": {"query": "репортаж"}}}  # ,
+        #                 # { "match": { "cf_wireSections": "MILITARY" } }
+        #             ]
+        #         }
+        #     }
+        # }  # Если по одному ключу находится несколько словарей, формируем список словарей
         # answer = requests.request("POST", url, data=json.dumps(data), headers=headers)
         # print(answer)
         # response_x = answer.json()
@@ -119,29 +114,56 @@ class TestAPITASS:
         urll1 = 'http://5.227.126.79:9200/mediadev-elvis-metadata-avm/_search?size=199'
         response = requests.request("GET", url, headers=headers, data=json.dumps(data))
         json_data = json.loads(response.text)
-        print(json_data)
+        # print(json_data)
         p = json.dumps(json_data, indent=4, ensure_ascii=False)
-        print(p)
+        # print(p)
         path = json_data["hits"]
-        print(path)
-        path2 = json_data["hits"]["hits"]  # ["_source"]["assetType"]
-        print(path2)
-        path1 = path2[1]['_source']['cf_headlineRu']
-        print(json.dumps(path1, indent=4, ensure_ascii=False))
-        print('------------------------------------')
-        for i in range(0, 17):
-            path1 = path2[i]['_source']['cf_objectId']
-            print(json.dumps(path1, indent=4, ensure_ascii=False))
-            path1 = path2[i]['_source']['iptcCreated']
-            print(json.dumps(path1, indent=4, ensure_ascii=False))
-            path1 = path2[i]['_source']['copyright']
-            print(json.dumps(path1, indent=4, ensure_ascii=False))
-            path1 = path2[i]['_source']['cf_headlineRu']
-            print(json.dumps(path1, indent=4, ensure_ascii=False))
-            path1 = path2[i]['_source']['cf_descriptionRu']
-            print(json.dumps(path1, indent=4, ensure_ascii=False))
-            path1 = path2[i]['_source']['cf_stockIdList']
-            print(json.dumps(path1, indent=4, ensure_ascii=False))
+        # print(path)
+        path2 = json_data["hits"]["hits"][0]['_source']  # ["_source"]["assetType"]
+        # print(json.dumps(path2, indent=4, ensure_ascii=False))
+        # path1 = path2[0]['_source']['cf_headlineRu']
+        # print(json.dumps(path1, indent=4, ensure_ascii=False))
+        print()
+        print('-------------------------------------------------------------------------------------------------')
+        print()
+        pab = ['cf_objectId', 'iptcCreated', 'copyright', 'cf_headlineRu', 'cf_descriptionRu', 'cf_stockIdList']
+        pab2 = ['ID DAM: ', 'Дата съемки: ', 'Авторское право: ', 'Заголовок: ', 'Описание: ', 'Библиотека: ']
+        for i in range(0, 6):
+            if pab[i] in path2 and pab[i] != 'cf_stockIdList':
+                path1 = path2[pab[i]]
+                print(pab2[i], json.dumps(path1, indent=4, ensure_ascii=False))
+            else:
+                if pab[i] in path2:
+                    path1 = path2[pab[i]][0]
+                    # print(path1)
+                    headers = {'Content-Type': 'application/json'}
+                    data = {"query": {"match": {"_id": path1}}}
+                    response = requests.request("GET", url, headers=headers, data=json.dumps(data))
+                    json_data = json.loads(response.text)
+                    ps2 = json_data["hits"]["hits"][0]['_source']['cf_headlineRu']
+                    print(pab2[i], json.dumps(ps2, indent=4, ensure_ascii=False))
+                else:
+                    print(pab2[i])
+            # if 'cf_objectId' in path2[i]['_source']:
+            #     path1 = path2[i]['_source']['cf_objectId']
+            #     print(json.dumps(path1, indent=4, ensure_ascii=False))
+            # if 'iptcCreated' in path2[i]['_source']:
+            #     path1 = path2[i]['_source']['iptcCreated']['formatted']
+            #     print(json.dumps(path1, indent=4, ensure_ascii=False))
+            # if 'copyright' in path2[i]['_source']:
+            #     path1 = path2[i]['_source']['copyright']
+            #     print(json.dumps(path1, indent=4, ensure_ascii=False))
+            # if 'cf_headlineRu' in path2[i]['_source']:
+            #     path1 = path2[i]['_source']['cf_headlineRu']
+            #     print(json.dumps(path1, indent=4, ensure_ascii=False))
+            # if 'cf_descriptionRu' in path2[i]['_source']:
+            #     path1 = path2[i]['_source']['cf_descriptionRu']
+            #     print(json.dumps(path1, indent=4, ensure_ascii=False))
+            # if 'cf_stockIdList' in path2[i]['_source']:
+            #     path1 = path2[i]['_source']['cf_stockIdList']
+            #     print(json.dumps(path1, indent=4, ensure_ascii=False))
+        end = time.time()
+        print(end - start)
 
     # составляет блок с репортажами
     def test_n2_create_bloc_reportazhi(self):
@@ -220,7 +242,7 @@ class TestAPITASS:
         json_data = json.loads(response.text)
 
         # print(json_data)
-        # print(json.dumps(json_data, indent=4, ensure_ascii=False))
+        print(json.dumps(json_data, indent=4, ensure_ascii=False))
         rep = json.dumps(json_data, indent=4, ensure_ascii=False)
         f = open('rep.json', 'w')  # открытие в режиме записи
         f.write(rep)
@@ -447,8 +469,9 @@ class TestAPITASS:
     #     headers = {
     #         'Content-Type': 'application/json',
     #         'Authorization': 'Bearer ' + Token}
-    #     urll = 'http://elvis2.dev.itass.local/services/create?folderPath=/Reportages&assetType=collection&name=TASS%20Collection'
-    #     response = requests.request("POST", urll, headers=headers)
+    #     urll = 'http://elvis2.dev.itass.local/services/create?folderPath=/Reportages&assetType=collection&name=TASS%20New%20TASS'
+    #
+    #     response = requests.request("POST", urll, headers=headers, )
     #     json_data = json.loads(response.text)
     #
     #     print(json_data)
