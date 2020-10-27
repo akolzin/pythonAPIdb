@@ -129,21 +129,27 @@ class TestAPITASS:
         pab = ['cf_objectId', 'iptcCreated', 'copyright', 'cf_headlineRu', 'cf_descriptionRu', 'cf_stockIdList']
         pab2 = ['ID DAM: ', 'Дата съемки: ', 'Авторское право: ', 'Заголовок: ', 'Описание: ', 'Библиотека: ']
         for i in range(0, 6):
-            if pab[i] in path2 and pab[i] != 'cf_stockIdList':
+            if pab[i] in path2 and pab[i] != 'cf_stockIdList' and pab[i] != 'iptcCreated':
                 path1 = path2[pab[i]]
                 print(pab2[i], json.dumps(path1, indent=4, ensure_ascii=False))
             else:
-                if pab[i] in path2:
-                    path1 = path2[pab[i]][0]
-                    # print(path1)
-                    headers = {'Content-Type': 'application/json'}
-                    data = {"query": {"match": {"_id": path1}}}
-                    response = requests.request("GET", url, headers=headers, data=json.dumps(data))
-                    json_data = json.loads(response.text)
-                    ps2 = json_data["hits"]["hits"][0]['_source']['cf_headlineRu']
-                    print(pab2[i], json.dumps(ps2, indent=4, ensure_ascii=False))
-                else:
+                if pab[i] != 'cf_stockIdList' and pab[i] != 'iptcCreated':
                     print(pab2[i])
+                if pab[i] in path2 and pab[i] == 'cf_stockIdList':
+                    for j in range(0, 6):
+                        path1 = path2[pab[i]][j]
+                        # print(path1)
+                        headers = {'Content-Type': 'application/json'}
+                        data = {"query": {"match": {"_id": path1}}}
+                        response = requests.request("GET", url, headers=headers, data=json.dumps(data))
+                        json_data = json.loads(response.text)
+                        ps2 = json_data["hits"]["hits"][0]['_source']['cf_headlineRu']
+                        print(pab2[i], json.dumps(ps2, indent=4, ensure_ascii=False))
+
+                if pab[i] in path2 and pab[i] == 'iptcCreated':
+                    path1 = path2[pab[i]]['formatted']
+                    print(pab2[i], path1)
+
             # if 'cf_objectId' in path2[i]['_source']:
             #     path1 = path2[i]['_source']['cf_objectId']
             #     print(json.dumps(path1, indent=4, ensure_ascii=False))
