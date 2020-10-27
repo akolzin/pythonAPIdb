@@ -1,78 +1,109 @@
 {
-    "took": 2,
-    "timed_out": false,
-    "_shards": {
-        "total": 1,
-        "successful": 1,
-        "skipped": 0,
-        "failed": 0
-    },
-    "hits": {
-        "total": {
-            "value": 1,
-            "relation": "eq"
-        },
-        "max_score": 1.0,
-        "hits": [
-            {
-                "_index": "mediadev-elvis-metadata-avm",
-                "_type": "_doc",
-                "_id": "9qOuVY3D4UC9ogArICbhVF",
-                "_score": 1.0,
-                "_source": {
-                    "assetType": "collection",
-                    "basicDataETag": 1,
-                    "assetFileModifier": "importmodule",
-                    "cf_keyAssetId": 14383798,
-                    "assetCreator": "NIGHTNAT",
-                    "assetFileModified": {
-                        "value": 1579513494094,
-                        "formatted": "2020-01-20 12:44:54 +0300"
-                    },
-                    "versionETag": 1,
-                    "downloadCount": 0,
-                    "status": "выпущено на сайт",
-                    "assetPath": "/Collections/43413.collection",
-                    "cf_objectId": 43413,
-                    "baseName": "43413",
-                    "cf_collectionSortOrderRef": "16933511,24762726,17734710,18730030,19074541,22568523,17410427,19298525,17739444,17739465,24766314,16833907,17901179,16454608,17412704,16914027,19300371,17938849,18837233,18838111,18838637,18850878,17952202,14383798,14382388,14380929,14380203,14379836,14383906,14377226,10132850,10131529,10129524,6428564,6431754,6431008,6430098,6436639,6431015,6429962,4349200,1450243,1450380,1169166,1169168,1169459,1169365,740416,740410,740849,740928,566173,566156,562608,436368,436350,437200,436287,284490,284501,284505,284555,284495,284506,285050,144468,111402,111392,234429,233822,88493,24041,199896,24013,24769,244837,51959,130444,5227885,244772,244732,60622,26870,1411736,4378389,465188,696507,4444480,528073,11502287,192892,410689,460627,1257252,144067,459480,4626722,743462,330859,15243554,325087,1183810,89572,1159857",
-                    "iptcCreated": {
-                        "value": 1485464400000,
-                        "formatted": "2017-01-27 00:00:00 +0300"
-                    },
-                    "contentETag": 1,
-                    "viewCount": 0,
-                    "cf_itemCount": 104,
-                    "cf_isMigrated": "true",
-                    "filename": "43413.collection",
-                    "assetCreated": {
-                        "value": 1485464400000,
-                        "formatted": "2017-01-27 00:00:00 +0300"
-                    },
-                    "name": "43413",
-                    "placeholder": "true",
-                    "folderPath": "/Collections",
-                    "cf_containerType": "коллекция",
-                    "assetDomain": "container",
-                    "cf_headlineRu": "11 февраля",
-                    "extension": "collection",
-                    "partitionId": 228,
-                    "assetModified": {
-                        "value": 1580303314099,
-                        "formatted": "2020-01-29 16:08:34 +0300"
-                    },
-                    "autoRenameNumber": 0,
-                    "thumbnailState": "no",
-                    "assetModifier": "admin",
-                    "previewState": "no",
-                    "metadataComplete": "true",
-                    "public": "true",
-                    "previewETag": 1,
-                    "assetPropertyETag": 1,
-                    "versionNumber": 1,
-                    "id": "9qOuVY3D4UC9ogArICbhVF"
-                }
+    "total": 1,
+    "hits": [
+        {
+            "id": "BTF4Qnx54k0By0n_e_orYJ",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "cf_collectionSortOrder": "[{\"sortOrder\":\"3\",\"assetId\":\"EyTQnjg4Kzr8dJQYPlTkrj\"},{\"sortOrder\":\"5\",\"assetId\":\"8kogYpjQ4iB8nbeP1asJwG\"},{\"sortOrder\":\"6\",\"assetId\":\"0gRy2Z8K41GA0Lg3mEjBtN\"},{\"sortOrder\":\"-1\",\"assetId\":\"0d2NFYpPaYYBx3kLGw_K57\"},{\"sortOrder\":\"2\",\"assetId\":\"9izKwgdfqF_9ThlORtGcDK\"}]",
+                "copyrightStatus": "eded",
+                "assetFileModifier": "cvtTest2",
+                "headline": "ТАСС.Медиа репортаж 2",
+                "copyrightOwnerID": "yhyh",
+                "assetCreator": "cvtTest2",
+                "cf_descriptionRu": "rfrfrfrfrf4444",
+                "assetFileModified": {
+                    "value": 1603789929806,
+                    "formatted": "2020-10-27 12:12:09 +0300"
+                },
+                "cf_wireImages": "[{\"section\":\"MILITARY\",\"ref_containerKeyAssetId\":\"\"},{\"section\":\"POL\",\"ref_containerKeyAssetId\":\"9izKwgdfqF_9ThlORtGcDK\"},{\"section\":\"UKR\",\"ref_containerKeyAssetId\":\"\"}]",
+                "copyright": "TASS",
+                "cf_releaseTime": "16:01:00+0300",
+                "cf_descriptionDef": "rfrfrfrfrf4444",
+                "cf_stockIdList": [
+                    "0195dYzUKvgBqbafxP72wN",
+                    "03Gove32qjB9l2J2Ws54tF",
+                    "04XEOt3UK9ZBIlopJf3nq4",
+                    "0DcnG520KZN9sN8JPWqatX",
+                    "0bT7shz4KdM8gnB1zruEbz"
+                ],
+                "cf_headlineFirst": "rfrfrf",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_reportageDateEnd": {
+                    "value": 1598983200000,
+                    "formatted": "2020-09-01 21:00:00 +0300"
+                },
+                "cf_headlineEn": "dfghdh",
+                "assetPath": "/Reportages/4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
+                "cf_hiddenDescription": "ТАСС.Медиа репортаж 2",
+                "cf_objectId": 34199,
+                "rating": 0,
+                "baseName": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
+                "cf_collectionSortOrderRef": "11 12",
+                "iptcCreated": {
+                    "value": 1598873751312,
+                    "formatted": "2020-08-31 14:35:51 +0300"
+                },
+                "copyrightOwnerImageID": "ujuju",
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_itemCount": 6,
+                "cf_iptcCreatedFirst": "04.03.2019",
+                "copyrightRegistrationNumber": "ikikik",
+                "filename": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
+                "assetCreated": {
+                    "value": 1598873751315,
+                    "formatted": "2020-08-31 14:35:51 +0300"
+                },
+                "cf_wireSections": [
+                    "MILITARY",
+                    "POL",
+                    "UKR"
+                ],
+                "copyrightAgent": "rfrf",
+                "cf_descriptionFirst": "Описани",
+                "cf_captionInterpreter": "ЦВТ_Ч",
+                "name": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
+                "cf_infotextRu": "епепенрнрнмитм",
+                "copyrightOwner": "tgtgt",
+                "cf_descriptionEn": "ttata",
+                "cf_releaseDate": "2020:10:23",
+                "folderPath": "/Reportages",
+                "cf_containerType": "репортаж",
+                "assetDomain": "container",
+                "cf_headlineRu": "ТАСС.Медиа репортаж 2",
+                "extension": "collection",
+                "cf_folderList": [
+                    "/TASS/Authors/ТАСС.Медиа"
+                ],
+                "cf_plannedPubDate": {
+                    "value": 1598972400000,
+                    "formatted": "2020-09-01 18:00:00 +0300"
+                },
+                "assetModified": {
+                    "value": 1603789929869,
+                    "formatted": "2020-10-27 12:12:09 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "importmodule",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_releaseDateTime": {
+                    "value": 1603458060000,
+                    "formatted": "2020-10-23 16:01:00 +0300"
+                },
+                "cf_reportageDateBegin": {
+                    "value": 1551693600000,
+                    "formatted": "2019-03-04 13:00:00 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1
             }
-        ]
-    }
+        }
+    ]
 }

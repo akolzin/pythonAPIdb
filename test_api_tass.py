@@ -126,7 +126,7 @@ class TestAPITASS:
         print()
         print('-------------------------------------------------------------------------------------------------')
         print()
-        pab = ['cf_objectId', 'iptcCreated', 'copyright', 'cf_headlineRu', 'cf_descriptionRu', 'cf_stockIdList']
+        pab = ['cf_objectId', 'iptcCreated', 'copyright', 'cf_headlineRu', 'cf_descriptionFirst', 'cf_stockIdList']
         pab2 = ['ID DAM: ', 'Дата съемки: ', 'Авторское право: ', 'Заголовок: ', 'Описание: ', 'Библиотека: ']
         for i in range(0, 6):
             if pab[i] in path2 and pab[i] != 'cf_stockIdList' and pab[i] != 'iptcCreated':
@@ -136,7 +136,11 @@ class TestAPITASS:
                 if pab[i] != 'cf_stockIdList' and pab[i] != 'iptcCreated':
                     print(pab2[i])
                 if pab[i] in path2 and pab[i] == 'cf_stockIdList':
-                    for j in range(0, 6):
+                    path1s = path2[pab[i]]
+                    d = len(path1s)
+                    # print(len(path1s))
+                    print(pab2[i])
+                    for j in range(0, d):
                         path1 = path2[pab[i]][j]
                         # print(path1)
                         headers = {'Content-Type': 'application/json'}
@@ -144,12 +148,12 @@ class TestAPITASS:
                         response = requests.request("GET", url, headers=headers, data=json.dumps(data))
                         json_data = json.loads(response.text)
                         ps2 = json_data["hits"]["hits"][0]['_source']['cf_headlineRu']
-                        print(pab2[i], json.dumps(ps2, indent=4, ensure_ascii=False))
+                        print('           ', json.dumps(ps2, indent=4, ensure_ascii=False))
 
                 if pab[i] in path2 and pab[i] == 'iptcCreated':
                     path1 = path2[pab[i]]['formatted']
                     print(pab2[i], path1)
-
+            # старый код
             # if 'cf_objectId' in path2[i]['_source']:
             #     path1 = path2[i]['_source']['cf_objectId']
             #     print(json.dumps(path1, indent=4, ensure_ascii=False))
@@ -248,68 +252,99 @@ class TestAPITASS:
         json_data = json.loads(response.text)
 
         # print(json_data)
-        print(json.dumps(json_data, indent=4, ensure_ascii=False))
+        # print(json.dumps(json_data, indent=4, ensure_ascii=False))
         rep = json.dumps(json_data, indent=4, ensure_ascii=False)
         f = open('rep.json', 'w')  # открытие в режиме записи
         f.write(rep)
         f.close()
-        path1 = json_data['hits'][0]['metadata']
-        if 'cf_containerType' in path1:
-            repor = json_data['hits'][0]['metadata']['cf_containerType']
-            if repor == 'репортаж' or repor == 'коллекция':
-                if 'cf_headlineRu' in path1:
-                    path2 = json_data['hits'][0]['metadata']['cf_headlineRu']  # ['cf_headlineRu'] name
-                    print(json.dumps(path2, indent=4, ensure_ascii=False))
+        path2 = json_data['hits'][0]['metadata']
+        print()
+        print('-------------------------------------------------------------------------------------------------')
+        print()
+        pab = ['cf_objectId', 'iptcCreated', 'copyright', 'cf_headlineRu', 'cf_descriptionFirst', 'cf_stockIdList']
+        pab2 = ['ID DAM: ', 'Дата съемки: ', 'Авторское право: ', 'Заголовок: ', 'Описание: ', 'Библиотека: ']
+        for i in range(0, 6):
+            if pab[i] in path2 and pab[i] != 'cf_stockIdList' and pab[i] != 'iptcCreated':
+                path1 = path2[pab[i]]
+                print(pab2[i], json.dumps(path1, indent=4, ensure_ascii=False))
+            else:
+                if pab[i] != 'cf_stockIdList' and pab[i] != 'iptcCreated':
+                    print(pab2[i])
+                if pab[i] in path2 and pab[i] == 'cf_stockIdList':
+                    path1s = path2[pab[i]]
+                    d = len(path1s)
+                    # print(len(path1s))
+                    print(pab2[i])
+                    for j in range(0, d):
+                        path1 = path2[pab[i]][j]
+                        # print(path1)
+                        headers = {'Content-Type': 'application/json'}
+                        data = {"query": {"match": {"_id": path1}}}
+                        response = requests.request("GET", url, headers=headers, data=json.dumps(data))
+                        json_data = json.loads(response.text)
+                        ps2 = json_data["hits"]["hits"][0]['_source']['cf_headlineRu']
+                        print('           ', json.dumps(ps2, indent=4, ensure_ascii=False))
 
-                if 'cf_wireSections' in path1:
-                    path2 = json_data['hits'][0]['metadata']['cf_wireSections']  # ['cf_headlineRu'] name
-                    print(json.dumps(path2, indent=4, ensure_ascii=False))
-
-                if 'status' in path1:
-                    path3 = json_data['hits'][0]['metadata']['status']  # ['cf_headlineRu'] name
-                    id_report = json_data['hits'][0]['id']
-                    print(json.dumps(path3, indent=4, ensure_ascii=False), ' id - ',
-                          json.dumps(id_report, indent=4, ensure_ascii=False))
-                    print()
-                    print('------------------------------------------------')
-                    print()
-
-                if 'cf_objectId' in path1:
-                    path4 = json_data['hits'][0]['metadata']['cf_objectId']
-                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
-                else:
-                    path4 = ' '
-                print('ID DAM:  ', path4)
-                if 'iptcCreated' in path1:
-                    path4 = json_data['hits'][0]['metadata']['iptcCreated']['formatted']
-                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
-                else:
-                    path4 = ' '
-                print('Дата создания:  ', path4)
-                if 'copyright' in path1:
-                    path4 = json_data['hits'][0]['metadata']['copyright']
-                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
-                else:
-                    path4 = ' '
-                print('Авторское право:  ', path4)
-                if 'cf_headlineRu' in path1:
-                    path4 = json_data['hits'][0]['metadata']['cf_headlineRu']
-                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
-                else:
-                    path4 = ' '
-                print('Заголовок:  ', path4)
-                if 'cf_descriptionRu' in path1:
-                    path4 = json_data['hits'][0]['metadata']['cf_descriptionRu']
-                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
-                else:
-                    path4 = ' '
-                print('Описание:  ', path4)
-                if 'cf_stockIdList' in path1:
-                    path4 = json_data['hits'][0]['metadata']['cf_stockIdList']
-                    path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
-                else:
-                    path4 = ' '
-                print('Библиотека:  ', path4)
+                if pab[i] in path2 and pab[i] == 'iptcCreated':
+                    path1 = path2[pab[i]]['formatted']
+                    print(pab2[i], path1)
+        # старый код
+        # if 'cf_containerType' in path1:
+        #     repor = json_data['hits'][0]['metadata']['cf_containerType']
+        #     if repor == 'репортаж' or repor == 'коллекция':
+        #         if 'cf_headlineRu' in path1:
+        #             path2 = json_data['hits'][0]['metadata']['cf_headlineRu']  # ['cf_headlineRu'] name
+        #             print(json.dumps(path2, indent=4, ensure_ascii=False))
+        #
+        #         if 'cf_wireSections' in path1:
+        #             path2 = json_data['hits'][0]['metadata']['cf_wireSections']  # ['cf_headlineRu'] name
+        #             print(json.dumps(path2, indent=4, ensure_ascii=False))
+        #
+        #         if 'status' in path1:
+        #             path3 = json_data['hits'][0]['metadata']['status']  # ['cf_headlineRu'] name
+        #             id_report = json_data['hits'][0]['id']
+        #             print(json.dumps(path3, indent=4, ensure_ascii=False), ' id - ',
+        #                   json.dumps(id_report, indent=4, ensure_ascii=False))
+        #             print()
+        #             print('------------------------------------------------')
+        #             print()
+        #
+        #         if 'cf_objectId' in path1:
+        #             path4 = json_data['hits'][0]['metadata']['cf_objectId']
+        #             path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+        #         else:
+        #             path4 = ' '
+        #         print('ID DAM:  ', path4)
+        #         if 'iptcCreated' in path1:
+        #             path4 = json_data['hits'][0]['metadata']['iptcCreated']['formatted']
+        #             path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+        #         else:
+        #             path4 = ' '
+        #         print('Дата создания:  ', path4)
+        #         if 'copyright' in path1:
+        #             path4 = json_data['hits'][0]['metadata']['copyright']
+        #             path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+        #         else:
+        #             path4 = ' '
+        #         print('Авторское право:  ', path4)
+        #         if 'cf_headlineRu' in path1:
+        #             path4 = json_data['hits'][0]['metadata']['cf_headlineRu']
+        #             path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+        #         else:
+        #             path4 = ' '
+        #         print('Заголовок:  ', path4)
+        #         if 'cf_descriptionRu' in path1:
+        #             path4 = json_data['hits'][0]['metadata']['cf_descriptionRu']
+        #             path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+        #         else:
+        #             path4 = ' '
+        #         print('Описание:  ', path4)
+        #         if 'cf_stockIdList' in path1:
+        #             path4 = json_data['hits'][0]['metadata']['cf_stockIdList']
+        #             path4 = (json.dumps(path4, indent=4, ensure_ascii=False))
+        #         else:
+        #             path4 = ' '
+        #         print('Библиотека:  ', path4)
         end = time.time()
         print(end - start)
 
