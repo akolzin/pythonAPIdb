@@ -16,7 +16,7 @@ def startRename(directory):
         file=files[0]
         ext=file.split('.')[-1]
         if not os.path.isfile(f'{directory}{i}.{ext}'):
-            name = f'{i}.{ext}'
+            name = f'{"ЦВТтест_"}{i}.{ext}'
             os.rename(directory1+file, directory1+name)
             del files[0]
         i+=1
