@@ -6,14 +6,14 @@ import pytest
 import urllib
 
 from api.client import RestfulBookerClient
-from api import random
+# from api import random
 from random import randint
 from conftest import pytest_runtest_makereport
 
 url = "http://5.227.126.79:9200/mediadev-elvis-metadata-avm/_search?size=19"
 # url1 = "http://5.227.126.79:9200/mediadev-elvis-metadata-avm/_search?data=%7B%22query%22%3A%7B%22match%22%3A%7B%22cf_containerType%22%3A%7B%22query%22%3A%22лента%22%7D%7D%7D%7D"
 url1 = "http://elvis2.dev.itass.local/api/asset/search?q=BTF4Qnx54k0By0n_e_orYJ"
-url2 = "http://elvis2.dev.itass.local/api/asset/search?q=/Data/Sections&size=25"
+url2 = "http://elvis2.dev.itass.local/api/asset/search?q=/Data/Sections&size=30"
 url22 = "http://elvis2.dev.itass.local/api/asset/search?q=/Reportages&size=5475"
 url3 = "http://elvis2.dev.itass.local/services/apilogin?username=cvtTest2&password=cvtTest2"
 # ?assetIds=BTF4Qnx54k0By0n_e_orYJ
@@ -350,6 +350,7 @@ class TestAPITASS:
 
     # выводит список лент по API документации DAM
     def test_n4_spisok_lent(self):
+        path333 = 0
         Token = self.test_token()
 
         headers = {
@@ -366,7 +367,7 @@ class TestAPITASS:
         f = open('rep.json', 'w')  # открытие в режиме записи
         f.write(rep)
         f.close()
-        for i in range(1, 25):
+        for i in range(1, 28):
             path1 = json_data['hits'][i]['metadata']
             if 'cf_headlineRu' in path1:
                 path2 = json_data['hits'][i]['metadata']['cf_headlineRu']  # ['cf_headlineRu'] name
@@ -376,9 +377,14 @@ class TestAPITASS:
             if 'status' in path1:
                 path3 = json_data['hits'][i]['metadata']['status']  # ['cf_headlineRu'] name
                 print(json.dumps(path3, indent=4, ensure_ascii=False))
+                path33 = json.dumps(path3, indent=4, ensure_ascii=False)
+                if path33 == '"выпущено на сайт"':
+                    path333 += 1
+                    print("--------------------------------------------")
                 print()
             # else:
             #     print(i)
+        print(path333)
 
     # создает json док с репортажами
     def test_n5_create_json_reportazhi(self):

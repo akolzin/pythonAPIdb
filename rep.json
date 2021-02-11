@@ -1,108 +1,1718 @@
 {
-    "total": 1,
+    "total": 28,
     "hits": [
         {
-            "id": "BTF4Qnx54k0By0n_e_orYJ",
-            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/thumbnail",
-            "previewUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/preview",
-            "originalUrl": "http://elvis2.dev.itass.local/api/asset/BTF4Qnx54k0By0n_e_orYJ/original",
+            "id": "EPZgdyO-qs6A7DLB8e_siL",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/EPZgdyO-qs6A7DLB8e_siL/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/EPZgdyO-qs6A7DLB8e_siL/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/EPZgdyO-qs6A7DLB8e_siL/original",
+            "highlightedText": null,
+            "metadata": {
+                "resolution": "96 px/inch",
+                "originalDocumentId": "xmp.did:ef395a5b-735a-4a1a-af12-58c6a4f478a7",
+                "assetType": "jpg",
+                "dimensionMm": "271 x 152 mm",
+                "assetFileModifier": "cvtDev",
+                "assetCreator": "cvtDev",
+                "cf_descriptionRu": "Тестовая задача мастер VK",
+                "mimeType": "image/jpeg",
+                "resolutionUnit": 1,
+                "assetFileModified": {
+                    "value": 1598428790978,
+                    "formatted": "2020-08-26 10:59:50 +0300"
+                },
+                "dimensionIn": "10.67 x 6.00 inch",
+                "imageOrientation": "Landscape",
+                "documentId": "xmp.did:ef395a5b-735a-4a1a-af12-58c6a4f478a7",
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "downloadCount": 0,
+                "instanceId": "xmp.iid:ef395a5b-735a-4a1a-af12-58c6a4f478a7",
+                "cf_headlineEn": "Ready for merge",
+                "assetPath": "/Data/Sections/readyfomerge.jpg",
+                "widthPt": 768.0,
+                "baseName": "readyfomerge",
+                "colorMode": "3",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 3,
+                "viewCount": 5,
+                "widthMm": 270.9333333333333,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "height": 576,
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "readyfomerge.jpg",
+                "assetCreated": {
+                    "value": 1598428790744,
+                    "formatted": "2020-08-26 10:59:50 +0300"
+                },
+                "widthIn": 10.666666666666666,
+                "heightMm": 152.39999999999998,
+                "cf_copyrightOwner": "0",
+                "resolutionY": 96.0,
+                "resolutionX": 96.0,
+                "imageAspectRatio": {
+                    "value": 1.7777777777777777,
+                    "formatted": "1.78"
+                },
+                "name": "readyfomerge.jpg",
+                "heightPt": 432.0,
+                "fileType": "JPEG",
+                "folderPath": "/Data/Sections",
+                "cf_embededContent": "[]",
+                "assetDomain": "image",
+                "cf_headlineRu": "Название контента для мастер VK",
+                "extension": "jpg",
+                "bitsPerSample": "8",
+                "width": 1024,
+                "assetModified": {
+                    "value": 1600697681863,
+                    "formatted": "2020-09-21 17:14:41 +0300"
+                },
+                "dimensionPt": "768 x 432 pt",
+                "thumbnailState": "yes",
+                "assetModifier": "importmodule",
+                "fileSize": {
+                    "value": 69453,
+                    "formatted": "68 KB"
+                },
+                "fileCreated": {
+                    "value": 1598428791028,
+                    "formatted": "2020-08-26 10:59:51 +0300"
+                },
+                "previewState": "yes",
+                "metadataComplete": "true",
+                "dimension": "1024 x 576 px",
+                "fileModified": {
+                    "value": 1600698834000,
+                    "formatted": "2020-09-21 17:33:54 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "heightIn": 6.0
+            }
+        },
+        {
+            "id": "5DuPRoxYqxNBKNiium0Cwd",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/5DuPRoxYqxNBKNiium0Cwd/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/5DuPRoxYqxNBKNiium0Cwd/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/5DuPRoxYqxNBKNiium0Cwd/original",
+            "highlightedText": null,
+            "metadata": {
+                "resolution": "96 px/inch",
+                "originalDocumentId": "xmp.did:76b9e698-4c57-4e08-8230-2854c43a8f1e",
+                "assetType": "jpg",
+                "dimensionMm": "83 x 55 mm",
+                "assetFileModifier": "cvtTest2",
+                "assetCreator": "cvtTest2",
+                "mimeType": "image/jpeg",
+                "resolutionUnit": 2,
+                "assetFileModified": {
+                    "value": 1600758194905,
+                    "formatted": "2020-09-22 10:03:14 +0300"
+                },
+                "dimensionIn": "3.25 x 2.18 inch",
+                "imageOrientation": "Landscape",
+                "documentId": "xmp.did:76b9e698-4c57-4e08-8230-2854c43a8f1e",
+                "downloadCount": 0,
+                "instanceId": "xmp.iid:76b9e698-4c57-4e08-8230-2854c43a8f1e",
+                "assetPath": "/Data/Sections/thumbnail.jpg",
+                "widthPt": 234.0,
+                "baseName": "thumbnail",
+                "colorMode": "3",
+                "contentETag": 2,
+                "viewCount": 3,
+                "widthMm": 82.55,
+                "height": 209,
+                "filename": "thumbnail.jpg",
+                "assetCreated": {
+                    "value": 1600758194854,
+                    "formatted": "2020-09-22 10:03:14 +0300"
+                },
+                "widthIn": 3.25,
+                "heightMm": 55.297916666666666,
+                "resolutionY": 96.0,
+                "resolutionX": 96.0,
+                "imageAspectRatio": {
+                    "value": 1.492822966507177,
+                    "formatted": "1.49"
+                },
+                "name": "thumbnail.jpg",
+                "heightPt": 156.75,
+                "fileType": "JPEG",
+                "software": "paint.net 4.2.5",
+                "folderPath": "/Data/Sections",
+                "assetDomain": "image",
+                "extension": "jpg",
+                "colorSpace": "1",
+                "bitsPerSample": "8",
+                "width": 312,
+                "assetModified": {
+                    "value": 1600758196027,
+                    "formatted": "2020-09-22 10:03:16 +0300"
+                },
+                "dimensionPt": "234 x 157 pt",
+                "thumbnailState": "yes",
+                "assetModifier": "cvtTest2",
+                "fileSize": {
+                    "value": 22277,
+                    "formatted": "22 KB"
+                },
+                "fileCreated": {
+                    "value": 1600758194910,
+                    "formatted": "2020-09-22 10:03:14 +0300"
+                },
+                "previewState": "yes",
+                "metadataComplete": "true",
+                "dimension": "312 x 209 px",
+                "fileModified": {
+                    "value": 1600758195000,
+                    "formatted": "2020-09-22 10:03:15 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "heightIn": 2.1770833333333335
+            }
+        },
+        {
+            "id": "59ptmji1q77Ado3KgRsnV_",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/59ptmji1q77Ado3KgRsnV_/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/59ptmji1q77Ado3KgRsnV_/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/59ptmji1q77Ado3KgRsnV_/original",
+            "highlightedText": null,
+            "metadata": {
+                "resolution": "96 px/inch",
+                "originalDocumentId": "xmp.did:b1b1b8d6-12cc-4792-a901-9d3d64ec2d14",
+                "assetType": "png",
+                "dimensionMm": "343 x 196 mm",
+                "assetFileModifier": "userCVT1",
+                "assetCreator": "userCVT1",
+                "cf_descriptionRu": "18_wire",
+                "mimeType": "image/png",
+                "parentContainerIds": [
+                    {
+                        "value": "5xyV_nH4awsBnJVoTVI6ce",
+                        "formatted": "wire-18+"
+                    }
+                ],
+                "resolutionUnit": 2,
+                "assetFileModified": {
+                    "value": 1596782472991,
+                    "formatted": "2020-08-07 09:41:12 +0300"
+                },
+                "dimensionIn": "13.52 x 7.72 inch",
+                "imageOrientation": "Landscape",
+                "documentId": "xmp.did:b1b1b8d6-12cc-4792-a901-9d3d64ec2d14",
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "bitDepth": 8,
+                "downloadCount": 0,
+                "instanceId": "xmp.iid:b1b1b8d6-12cc-4792-a901-9d3d64ec2d14",
+                "assetPath": "/Data/Sections/Безымянный7.png",
+                "widthPt": 973.5,
+                "baseName": "Безымянный7",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 4,
+                "viewCount": 4,
+                "widthMm": 343.4291666666667,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "height": 741,
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "Безымянный7.png",
+                "assetCreated": {
+                    "value": 1596782472857,
+                    "formatted": "2020-08-07 09:41:12 +0300"
+                },
+                "widthIn": 13.520833333333334,
+                "heightMm": 196.05624999999998,
+                "cf_copyrightOwner": "0",
+                "resolutionY": 96.0,
+                "resolutionX": 96.0,
+                "imageAspectRatio": {
+                    "value": 1.7516869095816465,
+                    "formatted": "1.75"
+                },
+                "name": "Безымянный7.png",
+                "heightPt": 555.75,
+                "fileType": "PNG",
+                "folderPath": "/Data/Sections",
+                "cf_embededContent": "[]",
+                "assetDomain": "image",
+                "cf_headlineRu": "18_wire",
+                "extension": "png",
+                "width": 1298,
+                "assetModified": {
+                    "value": 1604324657940,
+                    "formatted": "2020-11-02 16:44:17 +0300"
+                },
+                "dimensionPt": "974 x 556 pt",
+                "thumbnailState": "yes",
+                "assetModifier": "cvtTest1",
+                "fileSize": {
+                    "value": 83604,
+                    "formatted": "82 KB"
+                },
+                "fileCreated": {
+                    "value": 1596782473030,
+                    "formatted": "2020-08-07 09:41:13 +0300"
+                },
+                "previewState": "yes",
+                "metadataComplete": "true",
+                "dimension": "1298 x 741 px",
+                "fileModified": {
+                    "value": 1604324491000,
+                    "formatted": "2020-11-02 16:41:31 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "heightIn": 7.71875
+            }
+        },
+        {
+            "id": "DsKRMvXN4qs9cjs7ciP5ww",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/DsKRMvXN4qs9cjs7ciP5ww/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/DsKRMvXN4qs9cjs7ciP5ww/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/DsKRMvXN4qs9cjs7ciP5ww/original",
             "highlightedText": null,
             "metadata": {
                 "assetType": "collection",
-                "cf_collectionSortOrder": "[{\"sortOrder\":\"3\",\"assetId\":\"EyTQnjg4Kzr8dJQYPlTkrj\"},{\"sortOrder\":\"5\",\"assetId\":\"8kogYpjQ4iB8nbeP1asJwG\"},{\"sortOrder\":\"6\",\"assetId\":\"0gRy2Z8K41GA0Lg3mEjBtN\"},{\"sortOrder\":\"-1\",\"assetId\":\"0d2NFYpPaYYBx3kLGw_K57\"},{\"sortOrder\":\"2\",\"assetId\":\"9izKwgdfqF_9ThlORtGcDK\"}]",
-                "copyrightStatus": "eded",
-                "assetFileModifier": "cvtTest2",
-                "headline": "ТАСС.Медиа репортаж 2",
-                "copyrightOwnerID": "yhyh",
-                "assetCreator": "cvtTest2",
-                "cf_descriptionRu": "rfrfrfrfrf4444",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
                 "assetFileModified": {
-                    "value": 1603789929806,
-                    "formatted": "2020-10-27 12:12:09 +0300"
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
                 },
-                "cf_wireImages": "[{\"section\":\"MILITARY\",\"ref_containerKeyAssetId\":\"\"},{\"section\":\"POL\",\"ref_containerKeyAssetId\":\"9izKwgdfqF_9ThlORtGcDK\"},{\"section\":\"UKR\",\"ref_containerKeyAssetId\":\"\"}]",
-                "copyright": "TASS",
-                "cf_releaseTime": "16:01:00+0300",
-                "cf_descriptionDef": "rfrfrfrfrf4444",
-                "cf_stockIdList": [
-                    "0195dYzUKvgBqbafxP72wN",
-                    "03Gove32qjB9l2J2Ws54tF",
-                    "04XEOt3UK9ZBIlopJf3nq4",
-                    "0DcnG520KZN9sN8JPWqatX",
-                    "0bT7shz4KdM8gnB1zruEbz"
-                ],
-                "cf_headlineFirst": "rfrfrf",
+                "cf_headlineFirst": "MILITARY",
                 "downloadCount": 0,
                 "status": "выпущено на сайт",
-                "cf_reportageDateEnd": {
-                    "value": 1598983200000,
-                    "formatted": "2020-09-01 21:00:00 +0300"
-                },
-                "cf_headlineEn": "dfghdh",
-                "assetPath": "/Reportages/4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
-                "cf_hiddenDescription": "ТАСС.Медиа репортаж 2",
-                "cf_objectId": 34199,
-                "rating": 0,
-                "baseName": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
-                "cf_collectionSortOrderRef": "11 12",
-                "iptcCreated": {
-                    "value": 1598873751312,
-                    "formatted": "2020-08-31 14:35:51 +0300"
-                },
-                "copyrightOwnerImageID": "ujuju",
+                "cf_headlineEn": "Military",
+                "assetPath": "/Data/Sections/section_MILITARY.collection",
+                "baseName": "section_MILITARY",
                 "contentETag": 1,
                 "viewCount": 0,
-                "cf_itemCount": 6,
-                "cf_iptcCreatedFirst": "04.03.2019",
-                "copyrightRegistrationNumber": "ikikik",
-                "filename": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de.collection",
+                "filename": "section_MILITARY.collection",
                 "assetCreated": {
-                    "value": 1598873751315,
-                    "formatted": "2020-08-31 14:35:51 +0300"
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
                 },
-                "cf_wireSections": [
-                    "MILITARY",
-                    "POL",
-                    "UKR"
-                ],
-                "copyrightAgent": "rfrf",
-                "cf_descriptionFirst": "Описани",
-                "cf_captionInterpreter": "ЦВТ_Ч",
-                "name": "4cb2ec69-ebd1-4aa8-adbd-b4ea01a1e4de",
-                "cf_infotextRu": "епепенрнрнмитм",
-                "copyrightOwner": "tgtgt",
-                "cf_descriptionEn": "ttata",
-                "cf_releaseDate": "2020:10:23",
-                "folderPath": "/Reportages",
-                "cf_containerType": "репортаж",
+                "name": "section_MILITARY",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
                 "assetDomain": "container",
-                "cf_headlineRu": "ТАСС.Медиа репортаж 2",
+                "cf_headlineRu": "Армия и ОПК",
                 "extension": "collection",
-                "cf_folderList": [
-                    "/TASS/Authors/ТАСС.Медиа"
-                ],
-                "cf_plannedPubDate": {
-                    "value": 1598972400000,
-                    "formatted": "2020-09-01 18:00:00 +0300"
-                },
                 "assetModified": {
-                    "value": 1603789929869,
-                    "formatted": "2020-10-27 12:12:09 +0300"
+                    "value": 1598879203393,
+                    "formatted": "2020-08-31 16:06:43 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtDAM2",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 80,
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "5xmOAd5UKZjBDArCJbWqRM"
+            }
+        },
+        {
+            "id": "37K9Am_24KQAxyYz4jPGGV",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/37K9Am_24KQAxyYz4jPGGV/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/37K9Am_24KQAxyYz4jPGGV/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/37K9Am_24KQAxyYz4jPGGV/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
+                "assetFileModified": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "cf_headlineFirst": "ART",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Culture",
+                "assetPath": "/Data/Sections/section_ART.collection",
+                "baseName": "section_ART",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "section_ART.collection",
+                "assetCreated": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "name": "section_ART",
+                "urgency": 70,
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Культура и шоу-бизнес!",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1598876967748,
+                    "formatted": "2020-08-31 15:29:27 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "CVTWebHooks",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 70,
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "5xmOAd5UKZjBDArCJbWqRM"
+            }
+        },
+        {
+            "id": "2RvbG1vHKVyAQ8QmYvXdXU",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/2RvbG1vHKVyAQ8QmYvXdXU/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/2RvbG1vHKVyAQ8QmYvXdXU/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/2RvbG1vHKVyAQ8QmYvXdXU/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "cvtTest2",
+                "assetCreator": "cvtTest2",
+                "assetFileModified": {
+                    "value": 1605710103374,
+                    "formatted": "2020-11-18 17:35:03 +0300"
+                },
+                "cf_filenameOriginal": "Новая Коллекция.collection",
+                "downloadCount": 0,
+                "assetPath": "/Data/Sections/Новая Коллекция.collection",
+                "cf_objectId": 100000696,
+                "baseName": "Новая Коллекция",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "Новая Коллекция.collection",
+                "assetCreated": {
+                    "value": 1605710103374,
+                    "formatted": "2020-11-18 17:35:03 +0300"
+                },
+                "name": "Новая Коллекция",
+                "folderPath": "/Data/Sections",
+                "assetDomain": "container",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1605710103473,
+                    "formatted": "2020-11-18 17:35:03 +0300"
                 },
                 "thumbnailState": "no",
                 "assetModifier": "importmodule",
                 "previewState": "no",
                 "metadataComplete": "true",
-                "cf_releaseDateTime": {
-                    "value": 1603458060000,
-                    "formatted": "2020-10-23 16:01:00 +0300"
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "5xmOAd5UKZjBDArCJbWqRM",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/5xmOAd5UKZjBDArCJbWqRM/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/5xmOAd5UKZjBDArCJbWqRM/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/5xmOAd5UKZjBDArCJbWqRM/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
+                "assetFileModified": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
                 },
-                "cf_reportageDateBegin": {
-                    "value": 1551693600000,
-                    "formatted": "2019-03-04 13:00:00 +0300"
+                "cf_releaseTime": "23:00:00+0300",
+                "cf_headlineFirst": "ECO",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Economy",
+                "assetPath": "/Data/Sections/section_ECO.collection",
+                "baseName": "section_ECO",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "section_ECO.collection",
+                "assetCreated": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "name": "section_ECO",
+                "cf_releaseDate": "2020:11:18",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Экономика мировая",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1605765714785,
+                    "formatted": "2020-11-19 09:01:54 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest2",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 0,
+                "cf_releaseDateTime": {
+                    "value": 1605729600000,
+                    "formatted": "2020-11-18 23:00:00 +0300"
                 },
                 "previewETag": 1,
                 "versionNumber": 1
+            }
+        },
+        {
+            "id": "CyDWZdDoKDp8xG6h1EexAM",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/CyDWZdDoKDp8xG6h1EexAM/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/CyDWZdDoKDp8xG6h1EexAM/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/CyDWZdDoKDp8xG6h1EexAM/original",
+            "highlightedText": null,
+            "metadata": {
+                "resolution": "96 px/inch",
+                "originalDocumentId": "xmp.did:a40f659e-9e58-4aca-9d76-daa4198f26f8",
+                "assetType": "jpg",
+                "dimensionMm": "83 x 55 mm",
+                "assetFileModifier": "cvtTest2",
+                "assetCreator": "cvtTest2",
+                "mimeType": "image/jpeg",
+                "resolutionUnit": 2,
+                "assetFileModified": {
+                    "value": 1600758213671,
+                    "formatted": "2020-09-22 10:03:33 +0300"
+                },
+                "dimensionIn": "3.25 x 2.18 inch",
+                "imageOrientation": "Landscape",
+                "documentId": "xmp.did:a40f659e-9e58-4aca-9d76-daa4198f26f8",
+                "downloadCount": 0,
+                "instanceId": "xmp.iid:a40f659e-9e58-4aca-9d76-daa4198f26f8",
+                "assetPath": "/Data/Sections/thumbnail-1.jpg",
+                "widthPt": 234.0,
+                "baseName": "thumbnail-1",
+                "colorMode": "3",
+                "contentETag": 2,
+                "viewCount": 4,
+                "widthMm": 82.55,
+                "height": 209,
+                "filename": "thumbnail-1.jpg",
+                "assetCreated": {
+                    "value": 1600758213460,
+                    "formatted": "2020-09-22 10:03:33 +0300"
+                },
+                "widthIn": 3.25,
+                "heightMm": 55.297916666666666,
+                "resolutionY": 96.0,
+                "resolutionX": 96.0,
+                "imageAspectRatio": {
+                    "value": 1.492822966507177,
+                    "formatted": "1.49"
+                },
+                "name": "thumbnail-1.jpg",
+                "heightPt": 156.75,
+                "fileType": "JPEG",
+                "software": "paint.net 4.2.5",
+                "folderPath": "/Data/Sections",
+                "assetDomain": "image",
+                "extension": "jpg",
+                "colorSpace": "1",
+                "bitsPerSample": "8",
+                "width": 312,
+                "assetModified": {
+                    "value": 1600758214455,
+                    "formatted": "2020-09-22 10:03:34 +0300"
+                },
+                "dimensionPt": "234 x 157 pt",
+                "thumbnailState": "yes",
+                "assetModifier": "cvtTest2",
+                "fileSize": {
+                    "value": 22277,
+                    "formatted": "22 KB"
+                },
+                "fileCreated": {
+                    "value": 1600758213670,
+                    "formatted": "2020-09-22 10:03:33 +0300"
+                },
+                "previewState": "yes",
+                "metadataComplete": "true",
+                "dimension": "312 x 209 px",
+                "fileModified": {
+                    "value": 1600758214000,
+                    "formatted": "2020-09-22 10:03:34 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "heightIn": 2.1770833333333335
+            }
+        },
+        {
+            "id": "1thuwZ7dqT89C4NL54UU2x",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/1thuwZ7dqT89C4NL54UU2x/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/1thuwZ7dqT89C4NL54UU2x/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/1thuwZ7dqT89C4NL54UU2x/original",
+            "highlightedText": null,
+            "metadata": {
+                "resolution": "96 px/inch",
+                "originalDocumentId": "xmp.did:87f92478-c283-49f0-9e3a-1b2f54e923cf",
+                "assetType": "jpg",
+                "dimensionMm": "83 x 55 mm",
+                "assetFileModifier": "cvtTest2",
+                "assetCreator": "cvtTest2",
+                "mimeType": "image/jpeg",
+                "resolutionUnit": 2,
+                "assetFileModified": {
+                    "value": 1600758235220,
+                    "formatted": "2020-09-22 10:03:55 +0300"
+                },
+                "dimensionIn": "3.25 x 2.18 inch",
+                "imageOrientation": "Landscape",
+                "documentId": "xmp.did:87f92478-c283-49f0-9e3a-1b2f54e923cf",
+                "downloadCount": 0,
+                "instanceId": "xmp.iid:87f92478-c283-49f0-9e3a-1b2f54e923cf",
+                "assetPath": "/Data/Sections/thumbnail-2.jpg",
+                "widthPt": 234.0,
+                "baseName": "thumbnail-2",
+                "colorMode": "3",
+                "contentETag": 2,
+                "viewCount": 3,
+                "widthMm": 82.55,
+                "height": 209,
+                "filename": "thumbnail-2.jpg",
+                "assetCreated": {
+                    "value": 1600758235091,
+                    "formatted": "2020-09-22 10:03:55 +0300"
+                },
+                "widthIn": 3.25,
+                "heightMm": 55.297916666666666,
+                "resolutionY": 96.0,
+                "resolutionX": 96.0,
+                "imageAspectRatio": {
+                    "value": 1.492822966507177,
+                    "formatted": "1.49"
+                },
+                "name": "thumbnail-2.jpg",
+                "heightPt": 156.75,
+                "fileType": "JPEG",
+                "software": "paint.net 4.2.5",
+                "folderPath": "/Data/Sections",
+                "assetDomain": "image",
+                "extension": "jpg",
+                "colorSpace": "1",
+                "bitsPerSample": "8",
+                "width": 312,
+                "assetModified": {
+                    "value": 1600758236105,
+                    "formatted": "2020-09-22 10:03:56 +0300"
+                },
+                "dimensionPt": "234 x 157 pt",
+                "thumbnailState": "yes",
+                "assetModifier": "cvtTest2",
+                "fileSize": {
+                    "value": 22277,
+                    "formatted": "22 KB"
+                },
+                "fileCreated": {
+                    "value": 1600758235220,
+                    "formatted": "2020-09-22 10:03:55 +0300"
+                },
+                "previewState": "yes",
+                "metadataComplete": "true",
+                "dimension": "312 x 209 px",
+                "fileModified": {
+                    "value": 1600758235000,
+                    "formatted": "2020-09-22 10:03:55 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "heightIn": 2.1770833333333335
+            }
+        },
+        {
+            "id": "FZ2WEg0tqQzAb0jz6XWGy0",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/FZ2WEg0tqQzAb0jz6XWGy0/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/FZ2WEg0tqQzAb0jz6XWGy0/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/FZ2WEg0tqQzAb0jz6XWGy0/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "userCVT5",
+                "assetCreator": "userCVT5",
+                "cf_descriptionRu": "Тестовая задача мастер VK",
+                "assetFileModified": {
+                    "value": 1596535324156,
+                    "formatted": "2020-08-04 13:02:04 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "downloadCount": 0,
+                "assetPath": "/Data/Sections/For Testing.collection",
+                "baseName": "For Testing",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "For Testing.collection",
+                "assetCreated": {
+                    "value": 1596535324156,
+                    "formatted": "2020-08-04 13:02:04 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "For Testing",
+                "folderPath": "/Data/Sections",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "fortesting",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1604324627132,
+                    "formatted": "2020-11-02 16:43:47 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "8KjX2gx140JBaEKF3RDbhU",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/8KjX2gx140JBaEKF3RDbhU/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/8KjX2gx140JBaEKF3RDbhU/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/8KjX2gx140JBaEKF3RDbhU/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
+                "assetFileModified": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "cf_releaseTime": "23:00:00+0300",
+                "cf_headlineFirst": "INC",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Incidents",
+                "assetPath": "/Data/Sections/section_INC.collection",
+                "baseName": "section_INC",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "section_INC.collection",
+                "assetCreated": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "name": "section_INC",
+                "cf_releaseDate": "2020:11:15",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Происшествия",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1606720455429,
+                    "formatted": "2020-11-30 10:14:15 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest2",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 8,
+                "cf_releaseDateTime": {
+                    "value": 1605470400000,
+                    "formatted": "2020-11-15 23:00:00 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "5xmOAd5UKZjBDArCJbWqRM"
+            }
+        },
+        {
+            "id": "BacQWgS1qdo9f9FVKk24aB",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/BacQWgS1qdo9f9FVKk24aB/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/BacQWgS1qdo9f9FVKk24aB/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/BacQWgS1qdo9f9FVKk24aB/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
+                "assetFileModified": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "cf_releaseTime": "23:00:00+0300",
+                "cf_headlineFirst": "SOC",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Society",
+                "assetPath": "/Data/Sections/section_SOC.collection",
+                "baseName": "section_SOC",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "section_SOC.collection",
+                "assetCreated": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "name": "section_SOC",
+                "cf_releaseDate": "2020:11:15",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Общество",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1606720523655,
+                    "formatted": "2020-11-30 10:15:23 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest2",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 1,
+                "cf_releaseDateTime": {
+                    "value": 1605470400000,
+                    "formatted": "2020-11-15 23:00:00 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "5xmOAd5UKZjBDArCJbWqRM"
+            }
+        },
+        {
+            "id": "FYNS9ik5KHIBLx798Jbg-X",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/FYNS9ik5KHIBLx798Jbg-X/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/FYNS9ik5KHIBLx798Jbg-X/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/FYNS9ik5KHIBLx798Jbg-X/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
+                "cf_descriptionRu": "UKR",
+                "assetFileModified": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "UKR",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Ukraine",
+                "assetPath": "/Data/Sections/section_UKR.collection",
+                "baseName": "section_UKR",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "section_UKR.collection",
+                "assetCreated": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "section_UKR",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Украина",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1606727759661,
+                    "formatted": "2020-11-30 12:15:59 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "shkirya_a",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 90,
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "5xmOAd5UKZjBDArCJbWqRM"
+            }
+        },
+        {
+            "id": "8XTHT7d-4sZAojGRI504Tn",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/8XTHT7d-4sZAojGRI504Tn/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/8XTHT7d-4sZAojGRI504Tn/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/8XTHT7d-4sZAojGRI504Tn/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "importmodule",
+                "assetCreator": "importmodule",
+                "cf_deleted": "true",
+                "assetFileModified": {
+                    "value": 1579472522727,
+                    "formatted": "2020-01-20 01:22:02 +0300"
+                },
+                "cf_releaseTime": "23:00:00+0300",
+                "cf_headlineFirst": "POL",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Politics",
+                "assetPath": "/Data/Sections/section_POL.collection",
+                "cf_objectId": 0,
+                "baseName": "section_POL",
+                "cf_containerStyle": "7 элементов",
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_isMigrated": "true",
+                "filename": "section_POL.collection",
+                "assetCreated": {
+                    "value": 1194961596000,
+                    "formatted": "2007-11-13 16:46:36 +0300"
+                },
+                "name": "section_POL",
+                "cf_releaseDate": "2020:11:15",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Политика",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1606117416683,
+                    "formatted": "2020-11-23 10:43:36 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest2",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 9,
+                "cf_releaseDateTime": {
+                    "value": 1605470400000,
+                    "formatted": "2020-11-15 23:00:00 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "8lDgiCnUqtS936GGpoPnZt"
+            }
+        },
+        {
+            "id": "4yP9LjfnahbBklCBFrduH2",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/4yP9LjfnahbBklCBFrduH2/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/4yP9LjfnahbBklCBFrduH2/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/4yP9LjfnahbBklCBFrduH2/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "zateev_a",
+                "assetCreator": "zateev_a",
+                "cf_descriptionRu": "Срочные новости",
+                "assetFileModified": {
+                    "value": 1589795013823,
+                    "formatted": "2020-05-18 12:43:33 +0300"
+                },
+                "cf_wireImages": "кекуе",
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "SOC",
+                "downloadCount": 0,
+                "status": "отложено",
+                "cf_headlineEn": "заголовокEN",
+                "assetPath": "/Data/Sections/wire-social.collection",
+                "baseName": "wire-social",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-social.collection",
+                "assetCreated": {
+                    "value": 1589795013823,
+                    "formatted": "2020-05-18 12:43:33 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-social",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Социум",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609158970339,
+                    "formatted": "2020-12-28 15:36:10 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "5xyV_nH4awsBnJVoTVI6ce",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/5xyV_nH4awsBnJVoTVI6ce/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/5xyV_nH4awsBnJVoTVI6ce/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/5xyV_nH4awsBnJVoTVI6ce/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "zateev_a",
+                "assetCreator": "zateev_a",
+                "cf_descriptionRu": "Подборка",
+                "assetFileModified": {
+                    "value": 1591710010574,
+                    "formatted": "2020-06-09 16:40:10 +0300"
+                },
+                "cf_wireImages": "test",
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "ADU",
+                "downloadCount": 0,
+                "status": "снят с выпуска",
+                "cf_headlineEn": "Adult content",
+                "assetPath": "/Data/Sections/wire-18+.collection",
+                "baseName": "wire-18+",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-18+.collection",
+                "assetCreated": {
+                    "value": 1591710010574,
+                    "formatted": "2020-06-09 16:40:10 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-18+",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Подборка",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609161274032,
+                    "formatted": "2020-12-28 16:14:34 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 0,
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "87QbQ6vVao39szPS2RqpiG",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/87QbQ6vVao39szPS2RqpiG/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/87QbQ6vVao39szPS2RqpiG/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/87QbQ6vVao39szPS2RqpiG/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "cvtTest2",
+                "assetCreator": "cvtTest2",
+                "assetFileModified": {
+                    "value": 1597059557114,
+                    "formatted": "2020-08-10 14:39:17 +0300"
+                },
+                "cf_headlineFirst": "MEDIA",
+                "downloadCount": 0,
+                "status": "снят с выпуска",
+                "cf_headlineEn": "TASS.MEDIA",
+                "assetPath": "/Data/Sections/section_MEDIA.collection",
+                "baseName": "section_MEDIA",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "section_MEDIA.collection",
+                "assetCreated": {
+                    "value": 1597059557114,
+                    "formatted": "2020-08-10 14:39:17 +0300"
+                },
+                "name": "section_MEDIA",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Лента новостей",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609161218493,
+                    "formatted": "2020-12-28 16:13:38 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 0,
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "Dp6vskH847Q9HadnM_qDyq",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/Dp6vskH847Q9HadnM_qDyq/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/Dp6vskH847Q9HadnM_qDyq/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/Dp6vskH847Q9HadnM_qDyq/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "shkirya_a",
+                "assetCreator": "shkirya_a",
+                "cf_descriptionRu": "Тестовая задача мастер VK",
+                "assetFileModified": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "SPO",
+                "downloadCount": 0,
+                "status": "отложено",
+                "cf_headlineEn": "Sport",
+                "assetPath": "/Data/Sections/section_SPO.collection",
+                "baseName": "section_SPO",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "section_SPO.collection",
+                "assetCreated": {
+                    "value": 1597071392101,
+                    "formatted": "2020-08-10 17:56:32 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "section_SPO",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Спорт",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609161544403,
+                    "formatted": "2020-12-28 16:19:04 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 0,
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "5xmOAd5UKZjBDArCJbWqRM"
+            }
+        },
+        {
+            "id": "7yegZGKnaxU8QEhXpWuvRm",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/7yegZGKnaxU8QEhXpWuvRm/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/7yegZGKnaxU8QEhXpWuvRm/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/7yegZGKnaxU8QEhXpWuvRm/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "zateev_a",
+                "assetCreator": "zateev_a",
+                "cf_descriptionRu": "Политика",
+                "assetFileModified": {
+                    "value": 1585930468412,
+                    "formatted": "2020-04-03 19:14:28 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "POL",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Politics",
+                "assetPath": "/Data/Sections/wire-politika.collection",
+                "baseName": "wire-politika",
+                "cf_containerStyle": "слайдер",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-politika.collection",
+                "assetCreated": {
+                    "value": 1585930468412,
+                    "formatted": "2020-04-03 19:14:28 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-politika",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Политика",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609144511868,
+                    "formatted": "2020-12-28 11:35:11 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "0nMAJhiI4Ck9nXX1S67c32",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/0nMAJhiI4Ck9nXX1S67c32/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/0nMAJhiI4Ck9nXX1S67c32/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/0nMAJhiI4Ck9nXX1S67c32/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "zateev_a",
+                "assetCreator": "zateev_a",
+                "cf_descriptionRu": "Мировая экономика",
+                "assetFileModified": {
+                    "value": 1585940168103,
+                    "formatted": "2020-04-03 21:56:08 +0300"
+                },
+                "cf_wireImages": "кекуе",
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "ECO",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Economics",
+                "assetPath": "/Data/Sections/wire-ekonomika.collection",
+                "baseName": "wire-ekonomika",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-ekonomika.collection",
+                "assetCreated": {
+                    "value": 1585940168103,
+                    "formatted": "2020-04-03 21:56:08 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-ekonomika",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Мировая экономика",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609144534404,
+                    "formatted": "2020-12-28 11:35:34 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "CUZt9uYUKZd97mNxLA5Hdq",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/CUZt9uYUKZd97mNxLA5Hdq/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/CUZt9uYUKZd97mNxLA5Hdq/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/CUZt9uYUKZd97mNxLA5Hdq/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "userCVT1",
+                "assetCreator": "userCVT1",
+                "cf_descriptionRu": "Новости мира",
+                "assetFileModified": {
+                    "value": 1596522381776,
+                    "formatted": "2020-08-04 09:26:21 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "AUT",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Auto content",
+                "assetPath": "/Data/Sections/wire-auto+.collection",
+                "baseName": "wire-auto+",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-auto+.collection",
+                "assetCreated": {
+                    "value": 1596522381776,
+                    "formatted": "2020-08-04 09:26:21 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-auto+",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Новости мира",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609144610219,
+                    "formatted": "2020-12-28 11:36:50 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "7_lk8kid4rs9eoYFEDL803",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/7_lk8kid4rs9eoYFEDL803/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/7_lk8kid4rs9eoYFEDL803/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/7_lk8kid4rs9eoYFEDL803/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "zateev_a",
+                "assetCreator": "zateev_a",
+                "assetFileModified": {
+                    "value": 1600950564962,
+                    "formatted": "2020-09-24 15:29:24 +0300"
+                },
+                "downloadCount": 0,
+                "assetPath": "/Data/Sections/лента, которой нет.collection",
+                "cf_hiddenDescription": "MISS",
+                "baseName": "лента, которой нет",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "лента, которой нет.collection",
+                "assetCreated": {
+                    "value": 1600950564962,
+                    "formatted": "2020-09-24 15:29:24 +0300"
+                },
+                "name": "лента, которой нет",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Ленту не должно быть видно",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1605286196820,
+                    "formatted": "2020-11-13 19:49:56 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "zateev_a",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "CUR3AYbsq9u9V8a6omCUMl",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/CUR3AYbsq9u9V8a6omCUMl/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/CUR3AYbsq9u9V8a6omCUMl/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/CUR3AYbsq9u9V8a6omCUMl/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "cvtDAM2",
+                "assetCreator": "cvtDAM2",
+                "assetFileModified": {
+                    "value": 1604412485772,
+                    "formatted": "2020-11-03 17:08:05 +0300"
+                },
+                "cf_filenameOriginal": "Лента чтобы проверить headline.collection",
+                "downloadCount": 0,
+                "assetPath": "/Data/Sections/Лента чтобы проверить headline.collection",
+                "cf_objectId": 100000143,
+                "baseName": "Лента чтобы проверить headline",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "Лента чтобы проверить headline.collection",
+                "assetCreated": {
+                    "value": 1604412485772,
+                    "formatted": "2020-11-03 17:08:05 +0300"
+                },
+                "name": "Лента чтобы проверить headline",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1604413157731,
+                    "formatted": "2020-11-03 17:19:17 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtDAM2",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "F41AGdivKRoAM_XgVYTFdJ",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/F41AGdivKRoAM_XgVYTFdJ/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/F41AGdivKRoAM_XgVYTFdJ/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/F41AGdivKRoAM_XgVYTFdJ/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "importmodule",
+                "assetCreator": "importmodule",
+                "cf_deleted": "true",
+                "assetFileModified": {
+                    "value": 1579472522727,
+                    "formatted": "2020-01-20 01:22:02 +0300"
+                },
+                "cf_headlineFirst": "COVID-19",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Coronavirus COVID-19",
+                "assetPath": "/Data/Sections/section_COVID-19.collection",
+                "cf_objectId": 0,
+                "baseName": "section_COVID-19",
+                "cf_containerStyle": "8 элементов",
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_isMigrated": "true",
+                "filename": "section_COVID-19.collection",
+                "assetCreated": {
+                    "value": 1194961596000,
+                    "formatted": "2007-11-13 16:46:36 +0300"
+                },
+                "name": "section_COVID-19",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Коронавирус COVID-19",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1608043041944,
+                    "formatted": "2020-12-15 17:37:21 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtDev",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 20,
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "8lDgiCnUqtS936GGpoPnZt"
+            }
+        },
+        {
+            "id": "4He8t32d4twAW9N3ue6koJ",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/4He8t32d4twAW9N3ue6koJ/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/4He8t32d4twAW9N3ue6koJ/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/4He8t32d4twAW9N3ue6koJ/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "userCVT1",
+                "assetCreator": "userCVT1",
+                "cf_descriptionRu": "Описание",
+                "assetFileModified": {
+                    "value": 1596528359774,
+                    "formatted": "2020-08-04 11:05:59 +0300"
+                },
+                "cf_wireImages": "кекуе",
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "AUT",
+                "downloadCount": 0,
+                "status": "отложено",
+                "cf_headlineEn": "Auto content",
+                "assetPath": "/Data/Sections/wire-something-1.collection",
+                "baseName": "wire-something-1",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-something-1.collection",
+                "assetCreated": {
+                    "value": 1596528359774,
+                    "formatted": "2020-08-04 11:05:59 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-something-1",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Всемирные новости",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609158274242,
+                    "formatted": "2020-12-28 15:24:34 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "1h9875Ri4DG8SwUpMt4Y7J",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/1h9875Ri4DG8SwUpMt4Y7J/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/1h9875Ri4DG8SwUpMt4Y7J/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/1h9875Ri4DG8SwUpMt4Y7J/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "cvtDev",
+                "assetCreator": "shkirya_a",
+                "cf_deleted": "true",
+                "assetFileModified": {
+                    "value": 1598428630188,
+                    "formatted": "2020-08-26 10:57:10 +0300"
+                },
+                "cf_headlineFirst": "media collection",
+                "downloadCount": 0,
+                "status": "снят с выпуска",
+                "cf_headlineEn": "Test collection for media",
+                "assetPath": "/Data/Sections/test media collection.collection",
+                "cf_objectId": 5995184,
+                "rating": 4,
+                "baseName": "test media collection",
+                "contentETag": 1,
+                "viewCount": 0,
+                "filename": "test media collection.collection",
+                "assetCreated": {
+                    "value": 1598428630188,
+                    "formatted": "2020-08-26 10:57:10 +0300"
+                },
+                "name": "test media collection",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "assetDomain": "container",
+                "cf_headlineRu": "Развлечения",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609161852582,
+                    "formatted": "2020-12-28 16:24:12 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 0,
+                "previewETag": 1,
+                "versionNumber": 1
+            }
+        },
+        {
+            "id": "A2XO4suWaFgAszY-RNbiXY",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/A2XO4suWaFgAszY-RNbiXY/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/A2XO4suWaFgAszY-RNbiXY/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/A2XO4suWaFgAszY-RNbiXY/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "userCVT1",
+                "assetCreator": "userCVT1",
+                "assetFileModified": {
+                    "value": 1596522381776,
+                    "formatted": "2020-08-04 09:26:21 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "AUT",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Auto content",
+                "assetPath": "/Data/Sections/wire-auto+-1.collection",
+                "baseName": "wire-auto+-1",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-auto+-1.collection",
+                "assetCreated": {
+                    "value": 1596522381776,
+                    "formatted": "2020-08-04 09:26:21 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-auto+-1",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "Новости",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609144578276,
+                    "formatted": "2020-12-28 11:36:18 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "CUZt9uYUKZd97mNxLA5Hdq"
+            }
+        },
+        {
+            "id": "8lCmmZ6BaRa8FNrDwuXHda",
+            "thumbnailUrl": "http://elvis2.dev.itass.local/api/asset/8lCmmZ6BaRa8FNrDwuXHda/thumbnail",
+            "previewUrl": "http://elvis2.dev.itass.local/api/asset/8lCmmZ6BaRa8FNrDwuXHda/preview",
+            "originalUrl": "http://elvis2.dev.itass.local/api/asset/8lCmmZ6BaRa8FNrDwuXHda/original",
+            "highlightedText": null,
+            "metadata": {
+                "assetType": "collection",
+                "assetFileModifier": "userCVT1",
+                "assetCreator": "userCVT1",
+                "cf_descriptionRu": "События в мире",
+                "assetFileModified": {
+                    "value": 1596528359774,
+                    "formatted": "2020-08-04 11:05:59 +0300"
+                },
+                "copyright": "ТАСС",
+                "cf_releaseTime": "23:01:00+0300",
+                "cf_restrictionsTerritory": [
+                    "Весь мир"
+                ],
+                "cf_headlineFirst": "AUT3",
+                "downloadCount": 0,
+                "status": "выпущено на сайт",
+                "cf_headlineEn": "Auto content3",
+                "assetPath": "/Data/Sections/wire-something-2.collection",
+                "baseName": "wire-something-2",
+                "iptcCreated": {
+                    "value": 1600646400000,
+                    "formatted": "2020-09-21 03:00:00 +0300"
+                },
+                "contentETag": 1,
+                "viewCount": 0,
+                "cf_rightsBasis": "[{author=Пользователь с правами, но без договора, basis=служебное, reference=}]",
+                "cf_authorRealName": [
+                    "Пользователь с правами",
+                    "но без договора"
+                ],
+                "filename": "wire-something-2.collection",
+                "assetCreated": {
+                    "value": 1596528359774,
+                    "formatted": "2020-08-04 11:05:59 +0300"
+                },
+                "cf_copyrightOwner": "0",
+                "name": "wire-something-2",
+                "cf_releaseDate": "2020:11:15",
+                "folderPath": "/Data/Sections",
+                "cf_containerType": "лента",
+                "cf_embededContent": "[]",
+                "assetDomain": "container",
+                "cf_headlineRu": "События в мире",
+                "extension": "collection",
+                "assetModified": {
+                    "value": 1609144642867,
+                    "formatted": "2020-12-28 11:37:22 +0300"
+                },
+                "thumbnailState": "no",
+                "assetModifier": "cvtTest1",
+                "previewState": "no",
+                "metadataComplete": "true",
+                "cf_urgencyRef": 2,
+                "cf_releaseDateTime": {
+                    "value": 1605470460000,
+                    "formatted": "2020-11-15 23:01:00 +0300"
+                },
+                "previewETag": 1,
+                "versionNumber": 1,
+                "masterId": "4He8t32d4twAW9N3ue6koJ"
             }
         }
     ]
