@@ -10,13 +10,13 @@ def selectDir():
 def startRename(directory):
     directory1=directory.replace('/', '\\')
     files=sorted([path for path in os.listdir(directory) if os.path.isfile(directory+path)])
-    i=0
+    i=11
 
     while files:
         file=files[0]
         ext=file.split('.')[-1]
         if not os.path.isfile(f'{directory}{i}.{ext}'):
-            name = f'{"ЦВТтест_"}{i}.{ext}'
+            name = f'{"ЦВТ_тест1_№"}{i}.{ext}'
             os.rename(directory1+file, directory1+name)
             del files[0]
         i+=1
